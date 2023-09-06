@@ -2,6 +2,11 @@
     color: var(--orange-color);
     font-size: 1rem;
 }
+
+.fresh_deals__header__subtitle{
+    font-size: 2rem;
+}
+
 .fresh_deals__main__tabs ul{
     list-style: none;
 }
