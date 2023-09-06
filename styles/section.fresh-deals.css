@@ -1,0 +1,19 @@
+.fresh_deals__header__title {
+    color: var(--orange-color);
+}
+.fresh_deals_main__tabs ul{
+    list-style: none;
+}
+.fresh_deals_main__tabs__element.selected {
+    border-bottom: 0.01rem var(--orange-color) solid;
+}
+.fresh_deals_main__tabs{
+    width:100%;
+    border-bottom: 0.01rem lightgrey solid;
+}
+.fresh_deals_main{
+    width:70rem;
+}
+.fresh_deals__header{
+    width:40rem;
+}
