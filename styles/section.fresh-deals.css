@@ -1,5 +1,7 @@
+@import url("global.css");
+
 .fresh_deals__header__title {
-    color: var(--orange-color);
+    color: var(--accent-color-1);
     font-size: 1rem;
 }
 
@@ -11,7 +13,7 @@
     list-style: none;
 }
 .fresh_deals__main__tabs__element.selected {
-    border-bottom: 0.01rem var(--orange-color) solid;
+    border-bottom: 0.01rem var(--accent-color-1) solid;
 }
 
 .fresh_deals__main__tabs__element:hover{
@@ -30,7 +32,7 @@
 }
 
 .fresh_deals__main__cards__card{
-    background-color: var(--background-color);
+    background-color: var(--card-background-color);
     height: 28rem;
     width: 20rem;
 }

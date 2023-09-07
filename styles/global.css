@@ -7,8 +7,9 @@
 
 :root{
     --background-color:#ffffff;
+    --card-background-color:#FBF4F0;
     --accent-color-1:#f69946;
-    --accent-color-1:#a9c623;
+    --accent-color-2:#a9c623;
     min-width: 320px;
     font-family: 'Istok Web', sans-serif;
     font-style: normal;
