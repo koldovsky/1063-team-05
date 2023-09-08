@@ -2,88 +2,195 @@
     <header class="fresh_deals__header d-flex flex-column align-items-center mb-5">
         <h2 class="fresh_deals__header__title mb-3">Fresh Deals</h2>
         <p class="fresh_deals__header__subtitle mb-4">Right Off the Vine</p>
-        <p class="fresh_deals__header__info">We are constantly updating our range and adding seasonal items. Check out the freshest products and add them to your shopping cart. </p>
+        <p class="fresh_deals__header__info">We are constantly updating our range and adding seasonal items. Check out
+            the freshest products and add them to your shopping cart. </p>
     </header>
     <div class="fresh_deals__main d-flex flex-column align-items-center">
         <div class="fresh_deals__main__tabs d-flex flex-column align-items-center mb-4 ">
             <div class="d-flex flex-row justify-content-between fresh_deals__main__tabs__list">
-                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center  px-4 selected" id="fresh_deals_list_el_1" onclick="ChangeSelectedTab(this.id)">
-                    <p >Fruits</p>
+                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center  px-4 selected"
+                     id="fresh_deals_tab-fruits" onclick="ChangeSelectedTab(this.id)">
+                    <p>Fruits</p>
                 </div>
-                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4" id="fresh_deals_list_el_2" onclick="ChangeSelectedTab(this.id)">
-                    <p >Vegetables</p>
+                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4"
+                     id="fresh_deals_tab-vegetables" onclick="ChangeSelectedTab(this.id)">
+                    <p>Vegetables</p>
                 </div>
-                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4" id="fresh_deals_list_el_3" onclick="ChangeSelectedTab(this.id)">
-                    <p >Berries</p>
+                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4"
+                     id="fresh_deals_tab-berries" onclick="ChangeSelectedTab(this.id)">
+                    <p>Berries</p>
                 </div>
-                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4" id="fresh_deals_list_el_4" onclick="ChangeSelectedTab(this.id)">
-                    <p >Nuts</p>
+                <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4"
+                     id="fresh_deals_tab-nuts" onclick="ChangeSelectedTab(this.id)">
+                    <p>Nuts</p>
                 </div>
             </div>
         </div>
-        <div class="fresh_deals__main__cards w-100 p-2">
-            <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
-                <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/figs.png" alt="figs">
-                <div class="fresh_deals__main__card_header">
-                    <h5 class="fresh_deals__card__title">Fresh Figs</h5>
-                    <p class="fresh_deals__card__price">15,00USD</p>
-                    <button class="fresh_deals__card__button mb-4">Buy Now</button>
+        <div class="fresh_deals__tab" id="tab_fruits">
+            <div class="fresh_deals__main__cards w-100 p-2">
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/figs.png" alt="figs">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Fresh Figs</h5>
+                        <p class="fresh_deals__card__price">5,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/lime.png" alt="lime">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Lime</h5>
+                        <p class="fresh_deals__card__price">1,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/peaches.png" alt="peaches">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Peaches</h5>
+                        <p class="fresh_deals__card__price">3,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/tangerines.png"
+                         alt="tangerines">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Tangerines</h5>
+                        <p class="fresh_deals__card__price">2,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="fresh_deals__tab" id="tab_vegetables">
+            <div class="fresh_deals__main__cards w-100 p-2">
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/bell-peppers.png"
+                         alt="bell-peppers">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Bell Paper</h5>
+                        <p class="fresh_deals__card__price">8,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
 
-            <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
-                <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/figs.png" alt="figs">
-                <div class="fresh_deals__main__card_header">
-                    <h5 class="fresh_deals__card__title">Fresh Figs</h5>
-                    <p class="fresh_deals__card__price">15,00USD</p>
-                    <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/tomatoes.png" alt="tomatoes">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Tomatoes</h5>
+                        <p class="fresh_deals__card__price">4,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/carrot.png" alt="Carrots">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Carrots</h5>
+                        <p class="fresh_deals__card__price">1,60USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/pumpkin.png" alt="figs">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Pumpkin</h5>
+                        <p class="fresh_deals__card__price">1,50USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="fresh_deals__tab" id="tab_berries">
+            <div class="fresh_deals__main__cards w-100 p-2">
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/blueberries.png"
+                         alt="Blueberries">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Blueberries</h5>
+                        <p class="fresh_deals__card__price">5,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
 
-            <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
-                <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/figs.png" alt="figs">
-                <div class="fresh_deals__main__card_header">
-                    <h5 class="fresh_deals__card__title">Fresh Figs</h5>
-                    <p class="fresh_deals__card__price">15,00USD</p>
-                    <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/red-grapes.png"
+                         alt="Red grapes">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Red grapes</h5>
+                        <p class="fresh_deals__card__price">3,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/watermelon.png"
+                         alt="Watermelon">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Watermelon</h5>
+                        <p class="fresh_deals__card__price">6,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/raspberrys.png"
+                         alt="Raspberries">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Raspberries</h5>
+                        <p class="fresh_deals__card__price">3,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="fresh_deals__tab" id="tab_nuts">
+            <div class="fresh_deals__main__cards w-100 p-2">
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/cashew.png" alt="Cashew Nuts">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Cashew Nuts</h5>
+                        <p class="fresh_deals__card__price">13,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
 
-            <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
-                <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/figs.png" alt="figs">
-                <div class="fresh_deals__main__card_header">
-                    <h5 class="fresh_deals__card__title">Fresh Figs</h5>
-                    <p class="fresh_deals__card__price">15,00USD</p>
-                    <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/macadami.png"
+                         alt="Macadamia Nuts">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Macadamia Nuts</h5>
+                        <p class="fresh_deals__card__price">16,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/raw-walnut.png"
+                         alt="Raw Walnuts">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Raw Walnuts</h5>
+                        <p class="fresh_deals__card__price">9,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
+                    <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/pistachios.png"
+                         alt="Pistachios">
+                    <div class="fresh_deals__main__card_header">
+                        <h5 class="fresh_deals__card__title">Pistachios</h5>
+                        <p class="fresh_deals__card__price">12,00USD</p>
+                        <button class="fresh_deals__card__button mb-4">Buy Now</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠖⠛⠉⠉⠉⠙⠲⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢿⣿⣧⠀⠀⠀⠀⠀⢀⣶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣯⣸⠿⢋⢧⡀⠀⠀⣰⡟⣡⣶⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⡄⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⢶⣽⣦⣴⠏⣸⠛⡉⠙⠻⣿⣤⡀⠀⠀⠀⠀⠀⠀⣀⣽⡀⠀⠀⠀⢠⣾⣿⣷⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣏⣰⣿⢀⣚⣛⣻⣶⣿⣷⣄⠀⣀⣤⣤⣾⣿⠿⢿⣀⣠⠴⣿⣿⣿⣿⠂⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠀⠉⠻⢿⣼⣿⣇⣹⣿⠟⠋⠉⢻⣿⣿⣿⡿⣄⠀⢈⡴⠋⠉⠉⠉⠁⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⢀⠀⠀⠀⠀⢉⣩⠙⠆⠀⠀⠀⠀⠙⠿⢽⣓⡛⠑⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀⢸⣾⣶⣶⣶⣿⣯⣴⣷⣄⠀⠀⠀⠀⠀⢰⡄⠀⠀⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣼⢤⠶⢾⡿⣿⣄⠀⠈⠉⠙⠻⠿⢿⣶⠶⠶⠛⠛⠿⣦⣄⠀⢘⡇⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣄⣀⢀⣀⣴⣿⡇⢸⠀⢸⡇⠸⣯⠛⠶⢤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⢈⢿⡇⠸⣄⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠋⠉⠻⣿⣿⣿⣿⣿⣧⠸⣄⢀⣿⠛⠛⢷⡝⠲⢤⡈⠉⠑⠒⠒⠒⠒⠒⠛⠉⠘⠃⢰⣿⣦⡀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⠀⠀⢀⡴⠚⠁⠀⠀⠀⠀⠀⠛⣿⣿⣿⣿⣿⣧⠙⠚⣿⡆⠀⠈⢷⡐⠆⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣶⣶⣶⣶⣦⡀-->
-    <!--⠀⠀⠀⠀⠀⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣷⣴⣿⠇⠀⠀⢸⣇⣀⣀⡴⠂⠉⠀⠠⣄⠈⡆⠀⢀⣴⣿⣿⣿⣿⣿⠛⠁⠀⠈⠁-->
-    <!--⠀⠀⠀⠀⠀⡾⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⠋⠀⠀⠀⠋⠉⠁⠀⠀⠀⠀⠀⣀⣬⠿⠁⢠⣾⣿⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠋⠀⠀⣴⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⣹⣿⣿⣏⣿⣿⡅⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣿⣿⣿⠟⠋⣥⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⢻⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⠀⣰⠇⠀⠀⠀⠀⠀⣀⣀⠀⢀⡰⠞⠛⠉⠁⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣿⣿⣤⣿⣿⣧⡤⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⢠⡏⠀⠀⢀⡠⠀⠈⠁⠀⠈⠁⠀⠀⠀⠀⠀⠀⠐⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣟⣷⡆⠀⠀⠀⠀⠀-->
-    <!--⠀⠀⣼⠁⠀⠠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⣿⡿⠃⠀⡀⠀⠀⠀⠀-->
-    <!--⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡚⠖⠀⠸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢀⣴⣶⡟⠛⠛⠿⠿⠿⠿⠖⠒⠛⠓⠦⣄⡀-->
-    <!--⣼⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣦⠐⠀⢿⡀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣴⠿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉-->
-    <!--⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣄⣀⣤⣶⡾⠿⠟⠿⣏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠹⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢠⣄⣠⡄⢢⣰⡜⠿⣿⠁⠉⠀⠀⠀⢸⣯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⢿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠈⠁⡾⣟⣿⡶⣌⡞⠀⠀⠀⠀⢸⣿⠂⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀-->
-    <!--⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠁⠀⠉⠀⠀⠈⠀⠀⠀-->
 </section>
 
