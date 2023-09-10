@@ -1,5 +1,9 @@
 @import url("global.css");
 
+.fresh_deals{
+    width: 100vw;
+}
+
 .fresh_deals__header__title {
     color: var(--accent-color-1);
     font-size: 1rem;
@@ -9,11 +13,17 @@
     font-size: 2rem;
 }
 
-.fresh_deals__main__tabs ul{
-    list-style: none;
-}
-.fresh_deals__main__tabs__element.selected {
-    border-bottom: 0.01rem var(--accent-color-1) solid;
+
+
+.fresh_deals__main__tabs__element.selected:after {
+    display:block;
+    content:"";
+    width:150%;
+    position: relative;
+    background-color: var(--accent-color-1);
+    height: 0.15rem;
+    z-index: 1;
+
 }
 
 .fresh_deals__main__tabs__element:hover{
@@ -21,18 +31,128 @@
 }
 
 .fresh_deals__main__tabs{
+    width: 90%;
+    overflow-y: visible;
+    overflow-x: auto;
+}
+
+.fresh_deals__main__tabs::after{
+    content:"";
     width:100%;
-    border-bottom: 0.01rem lightgrey solid;
+    position: relative;
+    background-color: lightgray;
+    height: 0.1rem;
+    z-index: 0;
+}
+
+.fresh_deals__main__tabs__list{
+    width: 100%;
+    flex-grow: 1;
 }
 .fresh_deals__main{
-    width:70rem;
+    width:100%;
 }
 .fresh_deals__header{
-    width:40rem;
+    width:90%;
+}
+.fresh_deals__main__cards{
+    display: grid;
+    gap: 3rem;
+}
+.fresh_deals__card__button{
+    border: 0.15rem var(--accent-color-2) solid;
+    background-color: var(--card-background-color);
+    color: var(--accent-color-1);
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    width: 6rem;
+    height:3rem;
+    transition: background-color 0.3s;
+}
+.fresh_deals__card__button:hover{
+    background-color: var(--accent-color-2);
+    color:white;
+}
+.fresh_deals__card__price{
+    color:var(--accent-color-2);
+    font-size: 1.3rem;
 }
 
 .fresh_deals__main__cards__card{
     background-color: var(--card-background-color);
-    height: 28rem;
-    width: 20rem;
+    height: fit-content;
+    width: 100%;
 }
+
+.fresh_deals__main__card__img{
+    height: 90%;
+    width: 90%;
+}
+
+#tab_berries{
+    display: none;
+}
+#tab_nuts{
+    display: none;
+}
+#tab_vegetables{
+    display:none;
+}
+
+
+@media screen and (min-width:768px) {
+    .fresh_deals__main__cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (min-width:992px) {
+    .fresh_deals__main__cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    .fresh_deals__header{
+        width: 60%;
+    }
+    .fresh_deals__main__tabs{
+        width: 100%;
+        overflow-y: visible;
+        overflow-x: visible;
+    }
+    .fresh_deals__main__tabs__list{
+        justify-content: center !important;
+    }
+
+}
+@media screen and (min-width:1200px) {
+    .fresh_deals__main__cards__card{
+        background-color: var(--card-background-color);
+        height: fit-content;
+        width: 16rem;
+    }
+    .fresh_deals__main__cards{
+        gap: 1.5rem;
+    }
+    .fresh_deals__header{
+        width: 30rem;
+    }
+    .fresh_deals__main{
+        width:fit-content;
+    }
+}
+
+/*⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣴⣦⣦⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/*⠀⠀⠀⣠⣾⡿⠛⠛⡉⣉⣉⡀⠀⢤⡉⢳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/*⣀⣤⣾⡿⢋⣴⣖⡟⠛⢻⣿⣿⣽⣆⠙⢦⡙⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠖⠒⠻⠻⠶⣦⣄⠀*/
+/*⠉⣿⢸⠁⣸⣥⣹⠧⡠⣾⣿⣿⣿⣿⣧⡈⢷⣼⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣾⣿⣿⣶⣦⣈⠈⠻⣤*/
+/*⠀⢹⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡟⣫⠀⠙⣿⣿⣿⣿⣷⡄⣽*/
+/*⠀⠀⠳⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣀⣿⣟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿*/
+/*⠀⠀⠀⠈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⠭⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠒⡊⠙⠉⠉⠉⠓⠲⠤⡀⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⠏*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠿⣦⣴⣿⣶⣶⠀⠠⠀⣰⣤⣿⣦⠀⠀⠀⠀⠉⠙⠛⠻⠛⠁⠀*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢛⠃⢀⣄⠀⣿⡿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⠟⠋⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢦⣄⡀⠀⠀⢀⣀⣠⣴⡿⣿⣦⣀⠀⠀⠀⠀⢀⣴⠏⠀⠀⠀⠀⠀⠀⠀*/
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠻⠿⠉⠉⠉⠉⠉⠑⠋⠙⠻⡢⢖⡯⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
