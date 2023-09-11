@@ -1,14 +1,30 @@
-.app {
-    background-color: #fbf4ef;
+.application-container {
+    display: block;
+    width: 320px;
+    height: 1091.120px;
+    
+}
+
+.background-connector {
     width: 320px;
 }
 
-.app-introducing {
-    color: rgb(51, 51, 51);
+.app {
+    background-color: #fbf4ef;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
-    align-content: baseline;
-    justify-content: space-evenly;
+}
+
+.app-introducing {
+    color: var(--text-color);
+    width: 272px;
+    flex-direction: row;
+    
+   
+   
 }
 
 .app-introducing__title {
@@ -16,12 +32,19 @@
     font-size: 14px;
     font-weight: 550;
     font-stretch: 100%;
+    width: 272px;
+    height: 18.95px;
+    position: 0;
+    align-items: left;
 }
 
 .app-introducing__slogan-heading {
     font-size: 34px;
     font-weight: 550;
     font-stretch: 100%;
+    margin-top: 20px;
+    width: 272px;
+    height: 40.797px;
 }
 
 .app-introducing__slogan-description {
@@ -33,15 +56,14 @@
 .app-benefits {
     height: 141.797px;
     width: 272px;
-    display: flex;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
 
 }
 
 .app-benefits-icon-container {
- width: 50px;
- height: 126.8px;
+    width: 50px;
+    height: 126.8px;
 }
 
 .app-benefits-icon-container__icon {
@@ -50,7 +72,7 @@
 }
 
 .app-benefits-description__heading {
-    color: rgb(51, 51, 51);
+    color: var(--text-color);
     font-size: 22px;
     font-weight: 550;
 }
