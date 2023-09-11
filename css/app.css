@@ -1,0 +1,87 @@
+.app {
+    background-color: #fbf4ef;
+    width: 320px;
+}
+
+.app-introducing {
+    color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    justify-content: space-evenly;
+}
+
+.app-introducing__title {
+    color: var(--accent-color-2);
+    font-size: 14px;
+    font-weight: 550;
+    font-stretch: 100%;
+}
+
+.app-introducing__slogan-heading {
+    font-size: 34px;
+    font-weight: 550;
+    font-stretch: 100%;
+}
+
+.app-introducing__slogan-description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.app-benefits {
+    height: 141.797px;
+    width: 272px;
+    display: flex;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+
+}
+
+.app-benefits-icon-container {
+ width: 50px;
+ height: 126.8px;
+}
+
+.app-benefits-icon-container__icon {
+    width: 50px;
+    height: 50px;
+}
+
+.app-benefits-description__heading {
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.app-benefits-description {
+    height: 126.797px;
+    width: 207px;
+    padding: 0%;
+    border: 0%;
+    margin: 7.5;
+
+}
+
+.app-benefits-description__description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.additional-app-description__description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.download-icons {
+    width: 120px;
+    height: 41.99px;
+}
+
+.app__launched-app-mainscreen {
+    width: 92.54px;
+    height: 200.19px;
+}

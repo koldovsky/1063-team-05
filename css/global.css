@@ -10,11 +10,16 @@
     --background-color:#ffffff;
     --card-background-color:#FBF4F0;
     --accent-color-1:#f69946;
-    --accent-color-2:#a9c623
+    --accent-color-2:#a9c623;
     --text-color: rgb(51,51,51);
     min-width: 320px;
     font-family: 'Istok Web', sans-serif;
     font-family: 'Source Sans 3', sans-serif;
     font-style: normal;
     text-transform: none;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
