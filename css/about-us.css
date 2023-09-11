@@ -1,0 +1,26 @@
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about-us__name {
+    color: --accent-color-1;
+    font-size: --ui-caption-size;
+}
+
+.about-us__title {
+    font-size: --ui-block-title-size;
+    font-weight: --ui-caption-font-weight;
+    font-family: --ui-caption-font-family;
+}
+
+.about-us__list {
+    padding: 0;
+    list-style-type: none; 
+}
+
+@media (min-width: 767px) {
+    .about-us {
+        grid-template-columns: 1fr 1fr;
+    }
+}
