@@ -1,19 +1,21 @@
-@import url("global.css");
 
-.fresh_deals{
-    width: 100vw;
-}
 
 .fresh_deals__header__title {
     color: var(--accent-color-1);
-    font-size: 1rem;
+    font: var(--ui-block-name-size) var(--ui-block-name-font-family);
+    font-weight: var(--ui-block-name-font-weight);
 }
 
 .fresh_deals__header__subtitle{
-    font-size: 2rem;
+    font: var(--ui-block-title-size) var(--ui-block-title-font-family);
+    font-weight:var(--ui-block-title-font-weight);
 }
 
-
+.fresh_deals__header__info{
+    color: var(--ui-block-title-color);
+    font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
+    font-weight: var(--ui-block-subtitle-font-weight);
+}
 
 .fresh_deals__main__tabs__element.selected:after {
     display:block;
@@ -26,8 +28,20 @@
 
 }
 
-.fresh_deals__main__tabs__element:hover{
+.fresh_deals__main__tabs__element.selected{
+    color: var(--ui-block-title-color);
+}
+
+.fresh_deals__main__tabs__element{
+    transition: color 300ms;
     cursor: pointer;
+    color: var(--ui-block-text-color);
+    font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
+    font-weight: var(--ui-block-tab-font-weight);
+}
+
+.fresh_deals__main__tabs__element:hover{
+    color: var(--ui-block-title-color);
 }
 
 .fresh_deals__main__tabs{
@@ -40,7 +54,7 @@
     content:"";
     width:100%;
     position: relative;
-    background-color: lightgray;
+    background-color: var(--ui-block-tab-under_line-color);
     height: 0.1rem;
     z-index: 0;
 }
@@ -60,11 +74,13 @@
     gap: 3rem;
 }
 .fresh_deals__card__button{
+    font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
+    font-weight: var(--ui-block-subtitle-font-weight);
     border: 0.15rem var(--accent-color-2) solid;
     background-color: var(--card-background-color);
     color: var(--accent-color-1);
     border-radius: 0.3rem;
-    font-size: 0.8rem;
+    font-size: var(--ui-block-text-size);
     width: 6rem;
     height:3rem;
     transition: background-color 0.3s;
@@ -74,6 +90,8 @@
     color:white;
 }
 .fresh_deals__card__price{
+    font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
+    font-weight: var(--ui-block-tab-font-weight);
     color:var(--accent-color-2);
     font-size: 1.3rem;
 }
@@ -87,6 +105,14 @@
 .fresh_deals__main__card__img{
     height: 90%;
     width: 90%;
+}
+.fresh_deals__card__title{
+    font: var(--ui-block-card-font-size) var(--ui-block-subtitle-font-family);
+    font-weight: var(--ui-block-tab-font-weight);
+}
+
+.fresh_deals__tab{
+    width:100%;
 }
 
 #tab_berries{
@@ -140,19 +166,14 @@
         width:fit-content;
     }
 }
-
-/*⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣴⣦⣦⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
-/*⠀⠀⠀⣠⣾⡿⠛⠛⡉⣉⣉⡀⠀⢤⡉⢳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
-/*⣀⣤⣾⡿⢋⣴⣖⡟⠛⢻⣿⣿⣽⣆⠙⢦⡙⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠖⠒⠻⠻⠶⣦⣄⠀*/
-/*⠉⣿⢸⠁⣸⣥⣹⠧⡠⣾⣿⣿⣿⣿⣧⡈⢷⣼⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣾⣿⣿⣶⣦⣈⠈⠻⣤*/
-/*⠀⢹⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡟⣫⠀⠙⣿⣿⣿⣿⣷⡄⣽*/
-/*⠀⠀⠳⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣀⣿⣟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿*/
-/*⠀⠀⠀⠈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⠭⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠒⡊⠙⠉⠉⠉⠓⠲⠤⡀⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⠏*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠿⣦⣴⣿⣶⣶⠀⠠⠀⣰⣤⣿⣦⠀⠀⠀⠀⠉⠙⠛⠻⠛⠁⠀*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢛⠃⢀⣄⠀⣿⡿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⠟⠋⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢦⣄⡀⠀⠀⢀⣀⣠⣴⡿⣿⣦⣀⠀⠀⠀⠀⢀⣴⠏⠀⠀⠀⠀⠀⠀⠀*/
-/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠻⠿⠉⠉⠉⠉⠉⠑⠋⠙⠻⡢⢖⡯⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/*            _                 __     |----                   */
+/*          /  \     |\  /|   /    \   |  __    |   |   ___        */
+/*         /----\    | \/ |   |     |  |    |   |   |  |___       */
+/*        /      \   |    |   \ ___/   |____|   |___|   ___|       */
+/*        ____                                                     */
+/*    __/__    \_                                                  */
+/*   /     \   |  \                                                 */
+/*   \_____/   |  |       ___    |   |   ___                        */
+/*    |        |  |      |___    |   |  |___                        */
+/*    |   _    \_/        ___|   |___|   ___|                       */
+/*    \_/   \_/                                                     */
