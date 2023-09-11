@@ -1,14 +1,12 @@
-@import url("global.css");
-
-.deals-of-the-week__titel {
+.deals_week__heading__titel{
     font-family: 'Source Sans 3', sans-serif;
     color:var(--accent-color-1);
     font-weight: bold;
     font-size: 16px;
     text-align: center;
 }
-.deals-of-the-week__subtitel {
-    font-family: 'Source Sans 3', sans-serif;
+.deals_week__heading__subtitel{
+    font-family: 'Istok Web', sans-serif;
     color:var(--text-color);
     font-weight: bold;
     font-size: 34px;
