@@ -1,0 +1,27 @@
+@import url("global.css");
+
+.deals-of-the-week__titel {
+    font-family: 'Source Sans 3', sans-serif;
+    color:var(--accent-color-1);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.deals-of-the-week__subtitel {
+    font-family: 'Source Sans 3', sans-serif;
+    color:var(--text-color);
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+}
+p{
+    font-family: 'Source Sans 3', sans-serif;
+    color:rgb(51, 51, 51);
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+.carousel_slide {
+    display:flex;
+    flex-direction: column;
+}
