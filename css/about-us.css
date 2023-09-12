@@ -1,0 +1,106 @@
+.about-us {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about-us__text-wrapper {
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    vertical-align: baseline;
+}
+
+.about-us__text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__caption {
+    color: var(--accent-color-1);
+    font-size: var(--ui-block-name-size);
+    font-weight: var(--ui-block-name-font-weight);
+    font-family: var(--ui-block-name-font-family);
+}
+
+.about-us__title {
+    margin: 0;
+    color: var(--ui-block-title-color);
+    font-size: var(--ui-block-title-size-mobile);
+    font-weight: var(--ui-block-title-font-weight);
+    font-family: var(--ui-block-title-font-family);
+}
+
+.about-us__description {
+    font-size: var(--ui-block-text-size);
+    color: var(--ui-block-text-color);
+}
+
+.about-us__description-subtext {
+    color: var(--ui-block-subtitle-color);
+    font-size: var(--ui-block-subtitle-size);
+    font-weight: var(--ui-block-subtitle-font-weight);
+    font-family: var(--ui-block-subtitle-font-family);
+}
+
+.about-us__description-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+
+.about-us__item-img {
+    padding-right: 12px;
+}
+
+.about-us__item-img svg {
+    color: var(--accent-color-2);
+    width: 20px;
+}
+
+.about-us__item {
+    padding-right: 12px;
+    margin-bottom: 16px;
+}
+
+.about-us__button {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+    border-radius: 5px;
+    background-color: var(--accent-color-1);
+    padding: 13px 32px;
+    margin-top: 35px;
+    text-decoration: none;
+    align-self: start;
+    border: none;
+    cursor: pointer;
+}
+
+.about-us__button-text {
+    color: var(--background-color);
+    font-size: 13.2px;
+    font-weight: 600;
+}
+
+.about-us__button__img svg {
+    color: var(--background-color);
+    padding-left: 5px;
+    width: 24px;
+}
+
+@media (min-width: 767px) {
+    .about-us {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-us__title {
+        color: var(--ui-block-title-color);
+        font-size: var(--ui-block-title-size);
+    }
+}
