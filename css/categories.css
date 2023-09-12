@@ -32,6 +32,10 @@
     .categories__list {
         grid-template-columns: 1fr 1fr;
     }
+
+    .categories__list li:not(:first-child) {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 767px) {
@@ -46,6 +50,9 @@
 }
 
 @media (min-width: 992px) {
+    .categories {
+        padding-top: 100px;
+    }
     .categories__list {
         grid-template-columns: 1fr repeat(4, 234px);
     }
