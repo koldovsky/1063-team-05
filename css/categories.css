@@ -54,6 +54,6 @@
         padding-top: 100px;
     }
     .categories__list {
-        grid-template-columns: 1fr repeat(4, 234px);
+        grid-template-columns: 1fr repeat(4, 1fr);
     }
 }
