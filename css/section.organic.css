@@ -1,0 +1,24 @@
+.organic__header__title {
+    color: var(--accent-color-1);
+    font-size: 1rem;
+}
+
+.organic__header__subtitle {
+    font-size: 2.65rem;
+}
+
+.organic__header__info {
+    font-size: 1.12rem;
+}
+
+.organic__header {
+    width: 90%;
+}
+
+.organic__main {
+    width: 90%;
+}
+
+.organic__main__cards {
+    display: grid;
+}

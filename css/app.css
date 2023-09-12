@@ -1,0 +1,140 @@
+.application-container {
+    display: block;
+    width: 320px;
+    height: 1091.120px;
+    background-color: #fbf4ef;
+}
+
+.background-connector {
+    width: 320px;
+}
+
+.app {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.app-introducing {
+    color: var(--text-color);
+    width: 272px;
+
+}
+
+.app-introducing__title {
+    color: var(--accent-color-2);
+    font-size: 14px;
+    font-weight: 550;
+    font-style: normal;
+    width: 272px;
+    height: 18.95px;
+    position: 0;
+    align-items: left;
+}
+
+.app-introducing__slogan-heading {
+    font-size: 34px;
+    font-weight: 550;
+    font-stretch: 100%;
+    margin-top: 20px;
+    width: 272px;
+    height: 40.797px;
+    margin-bottom: 0;
+}
+
+.app-introducing__slogan-description {
+    font-family: var(--ui-block-subtitle-font-family);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/*App Explanation*/
+
+
+.app-benefits-container {
+    height: 313.594px;
+    width: 272px;
+    margin-top: 25px;
+}
+
+.app-benefits {
+    display: flex;
+    align-content: space-between;
+    width: 287px;
+    height: 141.97px;
+    gap: 15px;
+
+}
+
+.app-benefits-icon-container {
+    width: 50px;
+    height: 126.97px;
+    margin: 7.5;
+
+}
+
+.app-benefits-icon-container__icon {
+    width: 50px;
+    height: 50px;
+}
+
+.app-benefits-description__heading {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.app-benefits-description {
+    width: 207px;
+    height: 126.797px;
+    flex-direction: column;
+
+}
+
+.app-benefits-description__description {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+/*Additional Description */
+
+
+.additional-app-description__description {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 272px;
+    height: 96px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.download-icons {
+    width: 120px;
+    height: 41.99px;
+}
+
+.app__phone {
+    background-image: url(../img/app/phone-background.png);
+    background-size: cover;
+    width: 272px;
+    height: 277.492px;
+
+}
+.app__launched-app-mainscreen {
+    width: 92.54px;
+    height: 200.19px;
+    background-image: url(../img/app/iphone-screen.svg);
+}
