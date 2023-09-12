@@ -3,6 +3,10 @@
     padding-bottom: 50px;
 }
 
+.categories__name {
+    display: none;
+}
+
 .categories__list {
     padding: 0;
     display: grid;
