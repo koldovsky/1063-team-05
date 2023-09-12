@@ -74,13 +74,12 @@
     gap: 3rem;
 }
 .fresh_deals__card__button{
-    font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
+    font: var(--ui-block-name-size) var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-subtitle-font-weight);
     border: 0.15rem var(--accent-color-2) solid;
     background-color: var(--card-background-color);
     color: var(--accent-color-1);
     border-radius: 0.3rem;
-    font-size: var(--ui-block-text-size);
     width: 6rem;
     height:3rem;
     transition: background-color 0.3s;
@@ -91,7 +90,7 @@
 }
 .fresh_deals__card__price{
     font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
-    font-weight: var(--ui-block-tab-font-weight);
+    font-weight: var(--ui-block-title-font-weight);
     color:var(--accent-color-2);
     font-size: 1.3rem;
 }

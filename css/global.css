@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
 @font-face {
     font-family: Source Sans Pro;
-    src: url(../fonts/SourceSansPro.otf);
+    src:
+            url(../fonts/SourceSansPro.otf) format("opentype");
 }
 
 * {
@@ -28,7 +29,7 @@
     --ui-block-subtitle-color: #333;
     --ui-block-subtitle-size: 18px;
     --ui-block-subtitle-font-weight: 400;
-    --ui-block-subtitle-font-family: "Source Sans Pro", sans-serif;
+    --ui-block-subtitle-font-family: "Source Sans 3", sans-serif;
     --ui-block-tab-font-weight:500;
     --ui-block-card-font-size:20px;
     --ui-block-tab-under_line-color:lightgray;
