@@ -17,9 +17,7 @@
     --accent-color-1:#f69946;
     --accent-color-2:#a9c623;
     --text-color: rgb(51,51,51);
-    /*--ui-block-name-size: 14px;*/
-    /* Вніс зміни, здається так виглядає краще */
-    --ui-block-name-size: 18px;
+    --ui-block-name-size: 14px;
     --ui-block-name-font-weight: 700;
     --ui-block-name-font-family: "Istok Web",sans-serif;
     --ui-block-title-color: #333;
