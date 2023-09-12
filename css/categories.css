@@ -4,11 +4,16 @@
 }
 
 .categories__list {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr;
     list-style-type: none;
     text-align: center;
     justify-content: space-between;
+}
+
+.categories__list li:not(:first-child) {
+    margin-top: 50px;
 }
 
 .categories__item-img {

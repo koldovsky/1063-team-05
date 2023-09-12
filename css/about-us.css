@@ -3,10 +3,6 @@
     padding-bottom: 60px;
 }
 
-.about-us__img-wrapper {
-    padding: 0 15px;
-}
-
 .about-us__text-wrapper {
     padding: 0 15px;
     margin-top: 50px;
@@ -31,6 +27,7 @@
 }
 
 .about-us__title {
+    margin: 0;
     color: var(--ui-block-title-color);
     font-size: var(--ui-block-title-size-mobile);
     font-weight: var(--ui-block-title-font-weight);
