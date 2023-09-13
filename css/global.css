@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');*/
-@font-face {
-    font-family: Source Sans Pro;
-    src: url(../fonts/SourceSansPro.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -32,7 +28,7 @@
     --ui-block-tab-font-weight:500;
     --ui-block-card-font-size:20px;
     --ui-block-tab-under_line-color:lightgray;
-    --ui-block-subtitle-font-family: "Source Sans Pro",sans-serif;
+    --ui-block-subtitle-font-family: "Source Sans 3",sans-serif;
     --ui-block-text-size: 16px;
     --ui-block-text-color: #707070;
     min-width: 320px;

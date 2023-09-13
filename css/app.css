@@ -19,7 +19,7 @@
 }
 
 .app-introducing {
-    color: var(--text-color);
+    color: var(--ui-block-subtitle-color);
     width: 272px;
 
 }
@@ -27,7 +27,7 @@
 .app-introducing__title {
     color: var(--accent-color-2);
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 700;
     font-style: normal;
     width: 272px;
     height: 18.95px;
@@ -37,11 +37,11 @@
 
 .app-introducing__slogan-heading {
     font-size: 34px;
-    font-weight: 550;
+    font-weight: 700;
     font-stretch: 100%;
     margin-top: 20px;
     width: 272px;
-    height: 40.797px;
+    height: 40.8px;
     margin-bottom: 0;
 }
 
@@ -49,7 +49,7 @@
     font-family: var(--ui-block-subtitle-font-family);
     color: var(--text-color);
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
 }
@@ -64,18 +64,20 @@
 }
 
 .app-benefits {
-    display: flex;
-    align-content: space-between;
-    width: 287px;
-    height: 141.97px;
-    gap: 15px;
+    display: inline-flex;
+    width: 272px;
+    height: 156.8px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
 
 }
 
 .app-benefits-icon-container {
     width: 50px;
     height: 126.97px;
-    margin: 7.5;
+    margin: 7.5px;
 
 }
 
@@ -85,46 +87,67 @@
 }
 
 .app-benefits-description__heading {
-    color: var(--text-color);
+    color: var(--ui-block-subtitle-color);
     font-size: 22px;
-    font-weight: 550;
+    font-weight: 700;
+    width: 207px;
 }
 
 .app-benefits-description {
     width: 207px;
-    height: 126.797px;
+    height: 126px;
     flex-direction: column;
+    margin: 7.5px;
 
 }
 
 .app-benefits-description__description {
-    font-family: Source Sans Pro, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    color: rgb(112, 112, 112);
 }
 
 
 
 /*Additional Description */
+.additional-app-description {
+    margin-top: 45px;
+}
 
+.additional-app-description-container {
+    display: flex;
+    justify-content: center;
+}
 
-.additional-app-description__description {
-    font-family: Source Sans Pro, sans-serif;
+.additional-app-description-container__description {
+    font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0.8px;
+    color: rgb(112, 112, 112);
     width: 272px;
     height: 96px;
-    margin-top: 30px;
+}
+
+.download-buttons {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 0;
+    justify-content: center;
+    margin-top: 35px;
 }
 
 .download-icons {
+    width: 272px;
+    height: 103.883px;
+}
+
+.download-icons-container-icon {
     width: 120px;
     height: 41.99px;
+    margin: 10px 10px 10px 0;
 }
+
 
 .app__phone {
     background-image: url(../img/app/phone-background.png);
@@ -133,6 +156,7 @@
     height: 277.492px;
 
 }
+
 .app__launched-app-mainscreen {
     width: 92.54px;
     height: 200.19px;
