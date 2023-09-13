@@ -26,12 +26,12 @@
 .testimonials__intro{
     font-size: 18px;
     max-width: 750px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 
 .testimonials__wrapper .carousel {
-    padding-top: 27pxg;
+    padding-top: 27px;
     display: flex;
     gap: 30px;
     justify-content: center;
