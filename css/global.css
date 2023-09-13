@@ -32,6 +32,9 @@
     --ui-block-subtitle-font-family: "Source Sans 3",sans-serif;
     --ui-block-text-size: 16px;
     --ui-block-text-color: #707070;
+    --header-links-color: #A49D98;
+    --button--primary-text-color: #ffffff;
+    --button--shadow-color: rgba(39, 37, 40, 0.4);
     min-width: 320px;
     font-style: normal;
     text-transform: none;
@@ -43,4 +46,16 @@
 img { 
     display: block;
     width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
 }
