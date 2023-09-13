@@ -67,11 +67,13 @@
     bottom: 0;
     border: 1px solid red;
 }
+
 .best-deals__container .best-deals__countdown .countdown__item .countdown__item-decription:not(:last-child)::after {
     content: ':';
     position: absolute;
     right: -15px;
-  }
+}
+
 .best-deals__container .best-deals__countdown .countdown__item .countdown__item-decription .countdown__item-decription-text {
     color: var(--background-color);
     font-size: var(--ui-block-title-size-mobile);
