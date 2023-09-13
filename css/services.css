@@ -6,7 +6,7 @@
     background-size: cover;
 }
 
-.container {
+.services__title {
     font-family: var(--ui-block-name-font-family);
     position: relative; 
     display: flex;
