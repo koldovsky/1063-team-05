@@ -24,17 +24,19 @@
     font-size: 18px;
     text-align: center;
     overflow-wrap: break-word;
+   
 }
 
 .pictures__to__list {
     display: inline-block;
     text-align: center;
-
 }
 
 .pictures__delivery {
+    display: inline-block;
+    text-align: center;
     height: 100px;
-
+    width: 100px;
 }
 
 .delivery__list__text {
@@ -43,12 +45,52 @@
     font-weight: bold;
     font-size: 22px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .delivery__description {
+    display: border-box;
+    color: var(--ui-block-text-color);
+    font-family: 'Sourse Sans 3', sans-serif;
+    text-align: center;
+}
+
+.sales-image {
+  
+    height: 293.4px;
+    width: 380.2px;
+}
+
+.product-section{
+    display: inline-block;
+    text-align: center;
+}
+
+.sales-picture {
     display: inline-block;
     color: var(--ui-block-text-color);
     font-family: 'Sourse Sans 3', sans-serif;
-    font-size: 16px;
+    text-align: center;
 
+}
+
+.fresh-fruit {
+    display: inline-block;
+    color: var(--ui-block-text-color);
+    font-family: 'Sourse Sans 3', sans-serif;
+    text-align: center;
+}
+
+.discount{
+    color: var(--background-color);
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sales-title{
+    color: var(--background-color);
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    font-size: 38px;   
 }
