@@ -35,42 +35,47 @@
     font-size: 1.1rem;
 }
 
-.card {
+.organic__main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 35px;
-    left: 50%;
-    transform: translate(-50%);
     text-align: center;
     align-items: center;
     width: 17rem;
     background-color: var(--card-background-color);
 }
 
-.card__info__picture {
+.element__info__picture {
     margin-top: 43px;
     width: 13.63rem;
 }
 
-.card__info__main {
+.element__info__main {
     margin-top: 8px;
     background-color: var(--card-background-color);
 }
-.card__info__main__name {
+.element__info__main__name {
     font-family: var(--ui-block-name-font-family);
     color: var(--ui-block-title-color);
     font-size: 1.12rem;
     text-decoration: none;
 }
 
-.card__info__main__price {
+.element__info__main__price {
     font-family: var(--ui-block-name-font-family);
     color: var(--accent-color-2);
     font-size: 1.12rem;
     font-weight: 400;
 }
 
-.card__info__main__button {
+.element__info__main__button {
     margin-top: 18px;
     margin-bottom: 28px;
     font-size: 0.8rem;
