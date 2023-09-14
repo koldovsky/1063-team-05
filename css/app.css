@@ -3,6 +3,15 @@
     padding: 90px 24px 90px 24px;
 }
 
+@media (min-width: 768px) {
+    .freshly-app {
+        display: flex;
+    }
+}
+
+/* Application Introdusing*/
+
+
 .app-intro__title--text {
     color: var(--accent-color-2);
     font-family: var(--ui-block-name-font-family);
@@ -32,14 +41,19 @@
     color: var(--text-color);
 }
 
-.app-features{
-    
+
+/* App Features*/
+
+
+.app-features {
+
     margin-top: 25px;
 }
+
 .app-feature {
     display: flex;
     padding: 7.5px 0;
-    flex-direction:row; 
+    flex-direction: row;
 }
 
 .app-feature-description {
@@ -47,7 +61,9 @@
     flex-direction: column;
     gap: 0;
 }
-.app-feature__image, .app-feature-description{
+
+.app-feature__image,
+.app-feature-description {
     margin: 7.5px;
 }
 
@@ -56,7 +72,8 @@
     height: 50px;
 }
 
-.app-features-description__article-text, .app-additional-feature__text{
+.app-features-description__article-text,
+.app-additional-feature__text {
     color: var(--ui-block-text-color);
     font-family: var(--ui-block-subtitle-font-family);
     font-size: 16px;
@@ -77,17 +94,51 @@
     margin-top: 30px;
 }
 
+
+/* AppStore and GooglePlay buttons*/
+
+
 .download-buttons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 35px;
 }
-.download-button__appstore, .download-button__googleplay {
+
+.download-button__appstore,
+.download-button__googleplay {
     margin: 10px 10px 10px 0;
 }
 
 .store-buttons {
     width: 126px;
     height: 36px;
+}
+
+@media (min-width: 323px) {
+    .download-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .download-button__googleplay {
+        margin: 10px;
+    }
+
+}
+
+.freshly-app {
+    background-image: url(../img/app/phone-background.png);
+    background-size: cover;
+    min-height: 320px;
+    background-position: center;
+}
+
+.freshly-app__box {
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.freshly-app-screen {
+    padding: 31px 27px;
 }
