@@ -7,21 +7,21 @@
     </header>
     <div class="fresh_deals__main d-flex flex-column align-items-center">
         <div class="fresh_deals__main__tabs d-flex flex-column align-items-center mb-4 ">
-            <div class="d-flex flex-row justify-content-between fresh_deals__main__tabs__list">
+            <div class="d-flex flex-row fresh_deals__main__tabs__list">
                 <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center  px-4 selected"
-                     id="fresh_deals_tab-fruits" onclick="ChangeSelectedTab(this.id)">
+                     id="fresh_deals_tab-fruits">
                     <p>Fruits</p>
                 </div>
                 <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4"
-                     id="fresh_deals_tab-vegetables" onclick="ChangeSelectedTab(this.id)">
+                     id="fresh_deals_tab-vegetables">
                     <p>Vegetables</p>
                 </div>
                 <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4"
-                     id="fresh_deals_tab-berries" onclick="ChangeSelectedTab(this.id)">
+                     id="fresh_deals_tab-berries">
                     <p>Berries</p>
                 </div>
                 <div class="fresh_deals__main__tabs__element d-flex flex-column align-items-center px-4"
-                     id="fresh_deals_tab-nuts" onclick="ChangeSelectedTab(this.id)">
+                     id="fresh_deals_tab-nuts">
                     <p>Nuts</p>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="fresh_deals__tab" id="tab_vegetables">
+        <div class="fresh_deals__tab fresh_deals__hidden_tab" id="tab_vegetables">
             <div class="fresh_deals__main__cards w-100 p-2">
                 <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
                     <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/bell-peppers.png"
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <div class="fresh_deals__tab" id="tab_berries">
+        <div class="fresh_deals__tab fresh_deals__hidden_tab" id="tab_berries">
             <div class="fresh_deals__main__cards w-100 p-2">
                 <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
                     <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/blueberries.png"
@@ -149,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <div class="fresh_deals__tab" id="tab_nuts">
+        <div class="fresh_deals__tab fresh_deals__hidden_tab" id="tab_nuts">
             <div class="fresh_deals__main__cards w-100 p-2">
                 <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
                     <img class="fresh_deals__main__card__img mb-2" src="img/fresh-deals/cashew.png" alt="Cashew Nuts">
