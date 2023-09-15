@@ -1,22 +1,23 @@
 .mobile-app {
-    background-color: var(--ui-app-background-color);
+    background-color: var(--ui-block-app-background-color);
     padding: 90px 24px 90px 24px;
 }
 
-@media (min-width: 768px) {
-    .freshly-app {
-        display: flex;
-    }
-}
 
 /* Application Introdusing*/
 
+
+.app-intro {
+    max-width: 1200px;
+    margin: auto;
+}
 
 .app-intro__title--text {
     color: var(--accent-color-2);
     font-family: var(--ui-block-name-font-family);
     font-size: 14px;
     font-weight: var(--ui-block-title-font-weight);
+    margin-bottom: 0;
 }
 
 .app-intro__heading {
@@ -115,6 +116,37 @@
     height: 36px;
 }
 
+.freshly-app {
+    background-image: url(../img/app/phone-background.png);
+    background-size: cover;
+    min-height: 320px;
+    background-position: center;
+    min-width: 272px;
+    min-height: 277px;
+    max-width: 570px;
+    max-height: 544px;
+}
+
+
+.freshly-app__box {
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.freshly-app-screen {
+    padding: 31px 27px;
+}
+
+.freshly-app-iphone {
+    min-width: 109px;
+    min-height: 215.492px;
+    max-height: 463.78px;
+}
+
+
+/*Media Query*/
+
+
 @media (min-width: 323px) {
     .download-buttons {
         display: flex;
@@ -124,21 +156,59 @@
     .download-button__googleplay {
         margin: 10px;
     }
+}
+
+@media (min-width:768px) {
+    .app-intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .app-container {
+        padding-right: 0 15px;
+        width: 50%;
+    }
+
+    .freshly-app-review {
+        padding-left: 15px;
+        width: 50%;
+    }
+
+    .app-benefits-icon {
+        min-width: 70px;
+        min-height: 70px;
+    }
+
+    .app-intro__heading--text {
+        font-size: 38px;
+    }
+
+    .freshly-app__box {
+        margin: -50px;
+        padding-right: -15px;
+        padding-left: -15px;
+    }
+}
+
+@media (min-width:992px) {
+    .app-intro__heading--text {
+        font-size: 42px;
+    }
+}
+
+@media (max-width:768px) {
+    .app-container {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
-.freshly-app {
-    background-image: url(../img/app/phone-background.png);
-    background-size: cover;
-    min-height: 320px;
-    background-position: center;
-}
-
-.freshly-app__box {
-    margin-top: 50px;
-    padding: 0 15px;
-}
-
-.freshly-app-screen {
-    padding: 31px 27px;
+@media (max-width:1200px) {
+    .freshly-app-review {
+        max-width: 570px;
+        max-height: 544px;
+    }
 }
