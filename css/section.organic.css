@@ -79,8 +79,14 @@
     margin-top: 18px;
     margin-bottom: 28px;
     font-size: 0.8rem;
-    border-radius: 5px;
     background-color: var(--card-background-color);
     color: var(--accent-color-1);
     font-weight: 700;
+    font: var(--ui-block-name-size) var(--ui-block-subtitle-font-family);
+    font-weight: var(--ui-block-subtitle-font-weight);
+    border: 0.15rem var(--accent-color-2) solid;
+    border-radius: 0.3rem;
+    width: 6rem;
+    height:2.7rem;
+    transition: background-color 0.3s;
 }
