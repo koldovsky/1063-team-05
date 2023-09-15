@@ -9,7 +9,7 @@
     background-position: top left;
     margin-bottom: 90px;
 }
-.header::before {
+/* .header::before {
     position: absolute;
     content: "";
     top: 100vh;
@@ -19,7 +19,7 @@
     background-image: url(../img/header/header-bg-bottom.webp);
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 .header__top {
     display: flex;
     flex-direction: column-reverse;
