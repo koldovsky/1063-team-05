@@ -61,3 +61,7 @@ img {
         padding: 0 15px;
     }
 }
+
+body.lock {
+    overflow: hidden;
+}
