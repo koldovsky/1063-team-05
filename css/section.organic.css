@@ -1,24 +1,92 @@
 .organic__header__title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+    font-family: var(--ui-block-name-font-family);
+    font-weight: var(--ui-block-name-font-weight);
     color: var(--accent-color-1);
     font-size: 1rem;
 }
 
 .organic__header__subtitle {
-    font-size: 2.65rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+    font-family: var(--ui-block-name-font-family);
+    font-weight: var(--ui-block-name-font-weight);
+    color: var(--ui-block-title-color);
+    font-size: 2.13rem;
 }
 
 .organic__header__info {
-    font-size: 1.12rem;
-}
-
-.organic__header {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+    padding: 15px;
+    font-family: var(--ui-block-name-font-family);
+    font-weight: normal;
+    height: 140px;
+    color: var(--ui-block-title-color);
+    font-size: 1.1rem;
 }
 
 .organic__main {
-    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.organic__main__cards {
-    display: grid;
+.element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+    text-align: center;
+    align-items: center;
+    width: 17rem;
+    background-color: var(--card-background-color);
+}
+
+.element__info__picture {
+    margin-top: 43px;
+    width: 13.63rem;
+}
+
+.element__info__main {
+    margin-top: 8px;
+    background-color: var(--card-background-color);
+}
+.element__info__main__name {
+    font-family: var(--ui-block-name-font-family);
+    color: var(--ui-block-title-color);
+    font-size: 1.12rem;
+    text-decoration: none;
+}
+
+.element__info__main__price {
+    font-family: var(--ui-block-name-font-family);
+    color: var(--accent-color-2);
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+
+.element__info__main__button {
+    margin-top: 18px;
+    margin-bottom: 28px;
+    font-size: 0.8rem;
+    background-color: var(--card-background-color);
+    color: var(--accent-color-1);
+    font-weight: 700;
+    font: var(--ui-block-name-size) var(--ui-block-subtitle-font-family);
+    font-weight: var(--ui-block-subtitle-font-weight);
+    border: 0.15rem var(--accent-color-2) solid;
+    border-radius: 0.3rem;
+    width: 6rem;
+    height:2.7rem;
+    transition: background-color 0.3s;
 }

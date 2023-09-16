@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
-@font-face {
-    font-family: Source Sans Pro;
-    src:
-            url(../fonts/SourceSansPro.otf) format("opentype");
-}
 
 * {
     margin: 0;
@@ -20,7 +15,7 @@
     --text-color: rgb(51,51,51);
     --ui-block-name-size: 14px;
     --ui-block-name-font-weight: 700;
-    --ui-block-name-font-family: "Istok Web", ans-serif;
+    --ui-block-name-font-family: "Istok Web", sans-serif;
     --ui-block-title-color: #333;
     --ui-block-title-size: 42px;
     --ui-block-title-size-mobile: 34px;
@@ -34,8 +29,14 @@
     --ui-block-tab-font-weight:500;
     --ui-block-card-font-size:20px;
     --ui-block-tab-under_line-color:lightgray;
+    --ui-block-subtitle-font-family: "Source Sans 3",sans-serif;
     --ui-block-text-size: 16px;
     --ui-block-text-color: #707070;
+    --ui-app-background-color:#fff4ec;
+    --header-links-color: #A49D98;
+    --button--primary-text-color: #ffffff;
+    --button--shadow-color: rgba(39, 37, 40, 0.4);
+    --ui-block-app-background-color: #fbf4ef;
     min-width: 320px;
     font-style: normal;
     text-transform: none;
@@ -47,4 +48,20 @@
 img { 
     display: block;
     width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+body.lock {
+    overflow: hidden;
 }
