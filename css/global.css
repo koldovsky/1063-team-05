@@ -8,6 +8,8 @@
 }
 
 :root{
+    --ui-block-best-deals-text-color: #ffffff; 
+    --ui-block-countdown-text-color: rgba(255, 255, 255, 0.54);
     --background-color:#ffffff;
     --card-background-color:#FBF4F0;
     --accent-color-1:#f69946;
