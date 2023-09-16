@@ -1,0 +1,62 @@
+.contacts-working-hours{
+  padding: 60px 0 90px 0;  
+}
+.contacts-working-hours__contacts{
+    display: grid;
+    padding: 31px 31px;
+    background: url(../img/contacts-working-hours/contacts.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: top;   
+}
+.contacts-working-hours__contacts .contacts__text{
+    margin: 120px 0 20px 0;
+    color: var(--accent-color-1);
+    font-family: var(--ui-block-name-font-family);
+    font-size: var(--ui-block-name-size);
+    font-weight: var(--ui-block-title-font-weight);
+}
+.contacts-working-hours__contacts .contacts__informations-text{
+    margin: 0;
+    color: var(--text-color);
+    font-family: var(--ui-block-name-font-family);
+    font-size: var(--ui-block-subtitle-size);
+    font-weight: var(--ui-block-title-font-weight);
+}
+.contacts-working-hours__contacts .contacts__informations{
+    color: var(--accent-color-2);
+    font-family: var(--ui-block-name-font-family);
+    font-size: var(--ui-block-contacts-information-text-size-mobile);
+    font-weight: var(--ui-block-title-font-weight);
+    font-stretch: 100%;
+    text-decoration: none;
+}
+.contacts-working-hours__working-hours{
+    display: grid;
+    margin: 50px 0 0 0;
+    padding: 31px 31px;
+    background: url(../img/contacts-working-hours/working-hours.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.contacts-working-hours__working-hours .working-hours__informations-text{
+    margin: 120px 0 20px 0;
+    color: var(--accent-color-1);
+    font-family: var(--ui-block-name-font-family);
+    font-size: var(--ui-block-name-size);
+    font-weight: var(--ui-block-title-font-weight);
+}
+.contacts-working-hours__working-hours .working-hours__text{
+    margin: 0;
+    color: var(--text-color);
+    font-family: var(--ui-block-name-font-family);
+    font-size: var(--ui-block-subtitle-size);
+    font-weight: var(--ui-block-title-font-weight);
+}
+.contacts-working-hours__working-hours .working-hours__description{
+    color: var(--accent-color-1);
+    font-family: var(--ui-block-name-font-family);
+    font-size: var(--ui-block-contacts-information-text-size-mobile);
+    font-weight: var(--ui-block-title-font-weight);
+}

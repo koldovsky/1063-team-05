@@ -21,6 +21,7 @@
     --ui-block-name-font-family: "Istok Web", sans-serif;
     --ui-block-title-color: #333;
     --ui-block-title-size: 42px;
+    --ui-block-contacts-information-text-size-mobile: 24px;
     --ui-block-title-size-mobile: 34px;
     --ui-block-title-font-weight: 700;
     --ui-block-title-font-family: "Istok Web", sans-serif;
@@ -29,7 +30,7 @@
     --ui-block-subtitle-font-weight: 400;
     --ui-block-discount-font-weight: 600;
     --ui-block-subtitle-font-family: "Source Sans 3", sans-serif;
--tab-font-we    --ui-blockight:500;
+    --ui-block-tab-font-weight:500;
     --ui-block-card-font-size:20px;
     --ui-block-tab-under_line-color:lightgray;
     --ui-block-subtitle-font-family: "Source Sans 3",sans-serif;
