@@ -45,38 +45,40 @@
     margin: 20px 0 0 0;
     width: 100%;
 }
-.countdown__item{
+
+.countdown__item {
     position: relative;
 }
-.countdown__item p{
+
+.countdown__item p {
     display: grid;
     text-align: center;
     padding: 0;
     margin: auto;
-}  
-/* .countdown__item:first-child::before{
-    display: none;
-} */
-.countdown__item:not(:first-child)::before{
-    content:""; 
-    background: red; 
+}
+
+.countdown__item:not(:first-child)::before {
+    content: "";
+    background: var(--ui-countdown-background-line);
     position: absolute;
-    bottom: 0; 
-    left: -5.5px;  
-    height: 100%; 
+    bottom: 0;
+    left: -10px;
+    height: 100%;
     width: 1px;
 }
-   
-.countdown__item-decription{
+
+.countdown__item-decription {
     color: var(--ui-block-countdown-text-color);
-    font-size: var(--ui-block-subtitle-size);
+    font-size: var(--ui-block-name-size);
     font-weight: var(--ui-block-subtitle-font-weight);
-    font-family: var(--ui-block-subtitle-font-family);  
+    font-family: var(--ui-block-subtitle-font-family);
+    line-height: 16px;
 }
-.countdown__item-decription .countdown__item-decription-text{
+
+.countdown__item-decription .countdown__item-decription-text {
     color: var(--ui-block-best-deals-text-color);
-    font-size: var(--ui-block-subtitle-size);
-    font-weight: var(--ui-block-subtitle-font-weight);
+    font-size: var(--ui-block-name-size);
+    font-weight: var(--ui-block-discount-font-weight);
     font-family: var(--ui-block-subtitle-font-family);
 }
 
@@ -90,6 +92,7 @@
     font-size: var(--ui-block-subtitle-size);
     font-weight: var(--ui-block-discount-font-weight);
     font-family: var(--ui-block-subtitle-font-family);
+    margin: auto;
 }
 
 .best-deals__container .best-deals__discount .discount-code {
