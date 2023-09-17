@@ -68,3 +68,22 @@
     font-size: var(--ui-block-contacts-information-text-size-mobile);
     font-weight: var(--ui-block-title-font-weight);
 }
+
+@media (min-width: 768px) {
+    .contacts-working-hours {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-gap: 30px;
+        padding: 60px 0 95px 0;
+    }
+
+    .contacts-working-hours__contacts {
+        width: 100%;
+    }
+
+    .contacts-working-hours__working-hours {
+        width: 100%;
+        margin: 0;
+    }
+}

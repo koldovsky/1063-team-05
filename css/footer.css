@@ -173,3 +173,123 @@ footer {
     font-family: var(--ui-block-subtitle-font-family);
     margin: 20px 0 0 0;
 }
+
+@media (min-width: 768px) {
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__container .footer__column {
+        padding: 0 10px;
+        flex: 1;
+    }
+
+    .footer__column .footer__information-text {
+        text-align: start;
+    }
+
+    .footer__column .footer__social {
+        grid-gap: 10px;
+    }
+
+    .footer__column .footer__column-title {
+        text-align: start;
+    }
+
+    .footer__column .footer__links .footer__link-item .footer__link {
+        text-align: start;
+        font-weight: var(--ui-block-footer-contacts);
+    }
+
+    .footer__column .footer__links .footer__link-item {
+        margin: 25px 5px;
+    }
+
+    .footer__column .footer__column-text {
+        text-align: start;
+    }
+
+    .footer__column .footer__link {
+        text-align: start;
+    }
+
+    .footer__divider-line {
+        width: 90%;
+    }
+
+    .footer__container-bottom .footer__button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__button .footer__button-developer {
+        margin: 0;
+    }
+
+    .footer__button .footer__button-copyright {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__container {
+        justify-content: flex-start;
+    }
+
+    .footer__container .footer__column:nth-child(1) {
+        flex: 1.5;
+    }
+
+    .footer__column .footer__information {
+        align-items: start;
+        justify-content: start;
+    }
+
+    .footer__column .footer__information-text {
+        text-align: justify;
+    }
+
+    .footer__column .footer__social {
+        justify-content: flex-start;
+        grid-gap: 15px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .footer__container {
+        justify-content: flex-start;
+    }
+
+    .footer__container .footer__column:nth-child(1) {
+        flex: 1.5;
+    }
+
+    .footer__container .footer__column:nth-child(4) {
+        flex: 1.4;
+    }
+
+    .footer__column .footer__information {
+        align-items: start;
+        justify-content: start;
+    }
+
+    .footer__column .footer__information-text {
+        text-align: justify;
+    }
+
+    .footer__column .footer__social {
+        justify-content: flex-start;
+        grid-gap: 15px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .footer__divider {
+        padding: 50px 0;
+    }
+
+    .footer__divider-line {
+        width: 76.8%;
+    }
+}
