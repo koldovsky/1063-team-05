@@ -232,6 +232,26 @@ footer {
     }
 }
 
+@media (min-width: 992px) {
+    .footer__column .footer__social .footer__social-item-link svg:hover {
+        fill: var(--footer-color-social-link-hover);
+    }
+
+    .footer__column .footer__links .footer__link-item .footer__link:hover {
+        color: var(--accent-color-1);
+    }
+
+    .footer__column .footer__subscribe-form input[type="submit"]:hover {
+        background-color: var(--button--primary-text-color);
+        color: var(--text-color);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .footer__divider-line {
+        width: 84.6%;
+    }
+}
+
 @media (min-width: 1024px) {
     .footer__container {
         justify-content: flex-start;

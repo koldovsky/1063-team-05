@@ -46,6 +46,7 @@
     --background-color-footer: rgb(51,51,51);
     --background-input-footer: rgb(64,64,64);
     --footer-color-text: #aeaeae;
+    --footer-color-social-link-hover: #f68013; 
     --ui-footer-divider-line: rgb(255, 255, 255, 0.2);
     min-width: 320px;
     font-style: normal;
