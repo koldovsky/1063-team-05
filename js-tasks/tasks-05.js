@@ -11,6 +11,9 @@ function makeNegative(num) {
   return num;
 }
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
+function move (position, roll) {
+  return position+roll*2
+}
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
