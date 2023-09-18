@@ -15,5 +15,23 @@ function move (position, roll) {
   return position+roll*2
 }
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
+function greet(name, owner) {
+  if (name == owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+}
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
+function litres(time) {
+  const totalLitres = Math.floor(time *0.5);
+  return totalLitres;
+}
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
+function lovefunc(flower1, flower2) {
+  if (flower1 % 2 !== flower2 % 2) {
+    return true;
+  } else {
+    return false;
+  }
+}
