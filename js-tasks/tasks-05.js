@@ -1,5 +1,9 @@
 
 // Messi Goals https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  }
+goals (2, 5, 10);
 // Make negative    https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
