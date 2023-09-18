@@ -87,3 +87,9 @@
         margin: 0;
     }
 }
+
+@media (min-width: 992px) {
+    .contacts-working-hours__contacts .contacts__informations:hover {
+        text-decoration: underline;
+    }
+}
