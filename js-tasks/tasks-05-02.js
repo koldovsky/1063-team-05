@@ -8,10 +8,11 @@ function DNAtoRNA(dna) {
 }
 // Find Maximum and Minimum Values of a List https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 const min = function (list) {
-  return Math.min.apply(null, list);
+  return Math.min(...list);
 };
+
 const max = function (list) {
-  return Math.max.apply(null, list);
+  return Math.max(...list);
 };
 // Smallest value of an array https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
