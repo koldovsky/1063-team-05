@@ -43,8 +43,7 @@
 
 .fresh_deals__main__tabs {
     width: 90%;
-    overflow-y: visible;
-    overflow-x: auto;
+
 }
 
 .fresh_deals__main__tabs::after {
@@ -59,7 +58,8 @@
 .fresh_deals__main__tabs__list {
     width: 100%;
     flex-grow: 1;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .fresh_deals__main {
