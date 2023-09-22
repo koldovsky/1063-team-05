@@ -33,3 +33,4 @@ function changeTab(id) {
         }
     })
 }
+addTabListener();
