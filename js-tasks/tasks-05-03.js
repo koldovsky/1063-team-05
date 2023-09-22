@@ -1,10 +1,7 @@
 // https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-        const sortedArgs = args.sort((a, b) => a - b);
-        return sortedArgs[0];
-
-        // return Math.min(...args)
+        return Math.min(...args)
     }
 }
   
