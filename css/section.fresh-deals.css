@@ -113,6 +113,8 @@
 .fresh_deals__card__title {
     font: var(--ui-block-card-font-size) var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-tab-font-weight);
+    color:black;
+    text-decoration: none;
 }
 
 .fresh_deals__tab {
