@@ -23,7 +23,20 @@
     font-family: var(--ui-block-title-font-family);
 }
 
+.top-picks__description {
+    font-size: var(--ui-block-text-size);
+    color: var(--ui-block-text-color);
+}
+
 .top-picks__list-wrapper {
     margin: 0;
     padding: 0 24px;
+}
+
+.top-picks__description-list {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
 }
