@@ -6,6 +6,10 @@
 .top-picks__text-wrapper {
     margin: 0;
     padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
 }
 
 .top-picks__caption {
@@ -17,6 +21,7 @@
 
 .top-picks__title {
     margin: 0;
+    margin-top: 20px;
     color: var(--ui-block-title-color);
     font-size: var(--ui-block-title-size-mobile);
     font-weight: var(--ui-block-title-font-weight);
@@ -24,6 +29,7 @@
 }
 
 .top-picks__description {
+    margin-top: 25px;
     font-size: var(--ui-block-text-size);
     color: var(--ui-block-text-color);
 }
@@ -33,10 +39,100 @@
     padding: 0 24px;
 }
 
-.top-picks__description-list {
+.top-picks__list-button-prev {
+    display: block;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.top-picks__list-button-next-img {
+    width: 12px;
+    height: 12px;
+    fill: #333333;
+}
+
+.top-picks__list {
     margin-top: 45px;
-    display: flex;
-    flex-wrap: wrap;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
     list-style-type: none;
+}
+
+.top-picks__card-img {
+    display: block;
+}
+
+.top-picks__card {
+    margin: 0;
+    padding: 40px 30px;
+    max-height: 394px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fbf4f0;
+}
+
+.top-picks__card-link {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 0;
+    text-decoration: none;
+    word-wrap: break-word;
+    font-size: var(--ui-block-card-font-size);
+    font-weight: var(--ui-block-tab-font-weight);
+    font-family: (--ui-block-subtitle-font-family);
+    color: #333333;
+}
+
+.top-picks__card-price {
+    color: var(--accent-color-2);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.top-picks__card-buttom {
+    display: inline-block;
+    font-size: var(--ui-block-name-size);
+    font-weight: var(--ui-block-subtitle-font-weight);
+    font-family: (--ui-block-subtitle-font-family);
+    border: 0.15rem var(--accent-color-2) solid;
+    background-color: var(--card-background-color);
+    color: var(--accent-color-1);
+    border-radius: 0.3rem;
+    width: 6rem;
+    height: 3rem;
+    transition: background-color 0.3s;
+}
+
+@media (min-width: 767px) {
+    .container {
+        max-width: 920px;
+    }
+
+    .top-picks__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .top-picks__card {
+        max-width: 404px;
+        max-height: 555px;
+    }
+    
+}
+
+@media (min-width: 991px) {
+
+    .top-picks__text-wrapper {
+        padding: 0 266px;
+    }
+
+    .top-picks__list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+    }
+    
 }
