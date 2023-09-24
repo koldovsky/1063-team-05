@@ -36,15 +36,12 @@
 }
 
 .organic__main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: auto;
     justify-content: center;
 }
 
 .element {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     margin-top: 35px;
     text-align: center;
     align-items: center;
@@ -86,7 +83,7 @@
     font-weight: var(--ui-block-subtitle-font-weight);
     border: 0.15rem var(--accent-color-2) solid;
     border-radius: 0.3rem;
-    width: 6rem;
-    height:2.7rem;
+    width: 5.7rem;
+    height:2.6rem;
     transition: background-color 0.3s;
 }
