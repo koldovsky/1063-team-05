@@ -1,0 +1,29 @@
+.top-picks {
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.top-picks__text-wrapper {
+    margin: 0;
+    padding: 0 24px;
+}
+
+.top-picks__caption {
+    color: var(--accent-color-1);
+    font-size: var(--ui-block-name-size);
+    font-weight: var(--ui-block-name-font-weight);
+    font-family: var(--ui-block-name-font-family);
+}
+
+.top-picks__title {
+    margin: 0;
+    color: var(--ui-block-title-color);
+    font-size: var(--ui-block-title-size-mobile);
+    font-weight: var(--ui-block-title-font-weight);
+    font-family: var(--ui-block-title-font-family);
+}
+
+.top-picks__list-wrapper {
+    margin: 0;
+    padding: 0 24px;
+}
