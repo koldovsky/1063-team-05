@@ -37,18 +37,29 @@
 .top-picks__list-wrapper {
     margin: 0;
     padding: 0 24px;
+    position: relative;
 }
 
 .top-picks__list-button-prev {
-    display: block;
-    width: 20px;
-    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
     background-color: #000;
+    color: #000;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
 }
 
-.top-picks__list-button-next-img {
-    width: 12px;
-    height: 12px;
+.top-picks__list-button-prev-img {
+    top: 2px;
+    display: inline-block;
+    max-width: 100%;
+    width: 20px;
+    height: 20px;
     fill: #333333;
 }
 
@@ -57,17 +68,14 @@
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 15px;
     list-style-type: none;
-}
-
-.top-picks__card-img {
-    display: block;
 }
 
 .top-picks__card {
     margin: 0;
     padding: 40px 30px;
-    max-height: 394px;
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -75,13 +83,19 @@
     background-color: #fbf4f0;
 }
 
+.top-picks__card-img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
 .top-picks__card-link {
     display: inline-block;
     margin-top: 24px;
     padding: 0;
     text-decoration: none;
-    word-wrap: break-word;
-    font-size: var(--ui-block-card-font-size);
+    font-size: 18px;
     font-weight: var(--ui-block-tab-font-weight);
     font-family: (--ui-block-subtitle-font-family);
     color: #333333;
@@ -93,24 +107,53 @@
     white-space: nowrap;
 }
 
-.top-picks__card-buttom {
+.top-picks__card-button {
+    margin-top: 24px;
     display: inline-block;
-    font-size: var(--ui-block-name-size);
-    font-weight: var(--ui-block-subtitle-font-weight);
+    position: relative;
+    max-width: 100%;
+    font-size: 12px;
+    font-weight: 400;
     font-family: (--ui-block-subtitle-font-family);
     border: 0.15rem var(--accent-color-2) solid;
     background-color: var(--card-background-color);
     color: var(--accent-color-1);
-    border-radius: 0.3rem;
-    width: 6rem;
-    height: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    width: 93px;
+    height: 42px;
     transition: background-color 0.3s;
 }
 
+.top-picks__card-button:hover {
+    background-color: var(--accent-color-2);
+    color: #fff;
+}
+
+.top-picks__list-button-next {
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+    color: #000;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.top-picks__list-button-next-img {
+    top: 2px;
+    display: inline-block;
+    max-width: 100%;
+    width: 20px;
+    height: 20px;
+    fill: #333333;
+}
+
 @media (min-width: 767px) {
-    .container {
-        max-width: 920px;
-    }
 
     .top-picks__list {
         grid-template-columns: repeat(2, 1fr);
@@ -121,7 +164,7 @@
         max-width: 404px;
         max-height: 555px;
     }
-    
+
 }
 
 @media (min-width: 991px) {
@@ -134,5 +177,5 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 25px;
     }
-    
+
 }
