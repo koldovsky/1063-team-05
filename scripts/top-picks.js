@@ -23,7 +23,7 @@ const products = [
     },
     {
         id: 4,
-        name: Mango,
+        name: "Mango",
         imageUrl: "img/product/mango.png",
         price: "2,50",
         curency: "USD"
