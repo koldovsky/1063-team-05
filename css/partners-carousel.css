@@ -10,7 +10,13 @@
     min-height: 143.766px;
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
+}
+
+.partners__carousel-btn-prev, .partners__carousel-btn-next {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
 }
 
 @media (min-width:768px) {
