@@ -11,7 +11,6 @@
     align-items: center;
     max-width: 1200px;
     margin: auto;
-   
 }
 
 .partners__carousel-slide {
@@ -21,7 +20,8 @@
     align-items: center;
 }
 
-.partners__carousel-btn-prev, .partners__carousel-btn-next {
+.partners__carousel-btn-prev,
+.partners__carousel-btn-next {
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
@@ -32,7 +32,8 @@
         min-height: 221.195px;
         max-height: 221.195px;
     }
-    .partner-logos{
+
+    .partner-logos {
         max-height: 121px;
         max-width: 187px;
     }
