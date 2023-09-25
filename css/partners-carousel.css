@@ -1,0 +1,25 @@
+.partners__carousel {
+    min-height: 243.766px;
+    background-color: var(--accent-color-1);
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+}
+
+.partners__carousel-slide {
+    min-height: 143.766px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+@media (min-width:768px) {
+    .partners__carousel {
+        min-height: 221.195px;
+        max-height: 221.195px;
+    }
+    .partner-logos{
+        max-height: 121px;
+        max-width: 187px;
+    }
+}
