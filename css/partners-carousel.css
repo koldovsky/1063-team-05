@@ -25,6 +25,11 @@
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
+    fill: white;
+}
+
+.partners__carousel-btn-prev {
+    transform: scale(-1, 1);
 }
 
 @media (min-width:768px) {
