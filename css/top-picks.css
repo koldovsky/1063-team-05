@@ -58,7 +58,6 @@
 .top-picks__list-button-prev-img {
     top: 2px;
     display: inline-block;
-    max-width: 100%;
     width: 20px;
     height: 20px;
     fill: #333333;
@@ -71,6 +70,10 @@
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
     list-style-type: none;
+}
+
+.top-picks__list li:nth-child(n+2) {
+    display: none;
 }
 
 .top-picks__card {
@@ -161,6 +164,10 @@
         grid-gap: 15px;
     }
 
+    .top-picks__list li:nth-child(n+3) {
+        display: none;
+    }
+
     .top-picks__card {
         max-width: 404px;
         max-height: 555px;
@@ -177,6 +184,10 @@
     .top-picks__list {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 25px;
+    }
+
+    .top-picks__list li:nth-child(n+5) {
+        display: none;
     }
 
 }
