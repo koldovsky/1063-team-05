@@ -41,23 +41,46 @@
     position: relative;
 }
 
-.top-picks__list-button-prev {
+.top-picks__button-prev {
     display: inline-block;
     position: absolute;
     width: 32px;
     height: 32px;
+    left: 0;
     border: none;
     border-radius: 50%;
     background-color: #000;
     color: #000;
     top: 50%;
     z-index: 1;
-    transform: translate(-50%, -50%);
 }
 
-.top-picks__list-button-prev-img {
+.top-picks__button-prev-img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: #333333;
+    transform: rotate(180deg);
+}
+
+.top-picks__button-next {
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+    color: #000;
+    top: 50%;
+    z-index: 1;
+}
+
+.top-picks__button-next-img {
     top: 2px;
     display: inline-block;
+    max-width: 100%;
     width: 20px;
     height: 20px;
     fill: #333333;
@@ -70,10 +93,6 @@
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
     list-style-type: none;
-}
-
-.top-picks__list li:nth-child(n+2) {
-    display: none;
 }
 
 .top-picks__card {
@@ -134,38 +153,11 @@
     color: #fff;
 }
 
-.top-picks__list-button-next {
-    display: inline-block;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    border: none;
-    border-radius: 50%;
-    background-color: #000;
-    color: #000;
-    top: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-}
-
-.top-picks__list-button-next-img {
-    top: 2px;
-    display: inline-block;
-    max-width: 100%;
-    width: 20px;
-    height: 20px;
-    fill: #333333;
-}
-
 @media (min-width: 767px) {
 
     .top-picks__list {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
-    }
-
-    .top-picks__list li:nth-child(n+3) {
-        display: none;
     }
 
     .top-picks__card {
@@ -190,4 +182,28 @@
         display: none;
     }
 
+}
+
+@media (min-width: 1200px) {
+
+    .top-picks__button-prev {
+        left: -10px;
+        background-color: #fff;
+    }
+    
+    .top-picks__button-prev-img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .top-picks__button-next {
+        right: -10px;
+        background-color: #fff;
+    }
+    
+    .top-picks__button-next-img {
+        width: 30px;
+        height: 30px;
+    }
+    
 }
