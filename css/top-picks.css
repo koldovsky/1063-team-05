@@ -178,10 +178,6 @@
         grid-gap: 25px;
     }
 
-    .top-picks__list li:nth-child(n+5) {
-        display: none;
-    }
-
 }
 
 @media (min-width: 1200px) {
