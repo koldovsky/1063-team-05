@@ -8,6 +8,9 @@
 }
 
 :root{
+    --ui-block-best-deals-text-color: #ffffff; 
+    --ui-block-countdown-text-color: rgba(255, 255, 255, 0.54);
+    --ui-countdown-background-line: rgb(255, 255, 255, 0.125); 
     --background-color:#ffffff;
     --card-background-color:#FBF4F0;
     --accent-color-1:#f69946;
@@ -18,6 +21,9 @@
     --ui-block-name-font-family: "Istok Web", sans-serif;
     --ui-block-title-color: #333;
     --ui-block-title-size: 42px;
+    --ui-block-footer-title: 22px;
+    --ui-block-countdown-title: 36px;
+    --ui-block-contacts-information-text-size-mobile: 24px;
     --ui-block-title-size-mobile: 34px;
     --ui-block-title-font-weight: 700;
     --ui-block-title-font-family: "Istok Web", sans-serif;
@@ -25,6 +31,7 @@
     --ui-block-subtitle-size: 18px;
     --ui-block-subtitle-font-weight: 400;
     --ui-block-discount-font-weight: 600;
+    --ui-block-footer-contacts: 700;
     --ui-block-subtitle-font-family: "Source Sans 3", sans-serif;
     --ui-block-tab-font-weight:500;
     --ui-block-card-font-size:20px;
@@ -37,6 +44,11 @@
     --button--primary-text-color: #ffffff;
     --button--shadow-color: rgba(39, 37, 40, 0.4);
     --ui-block-app-background-color: #fbf4ef;
+    --background-color-footer: rgb(51,51,51);
+    --background-input-footer: rgb(64,64,64);
+    --footer-color-text: #aeaeae;
+    --footer-color-social-link-hover: #f68013; 
+    --ui-footer-divider-line: rgb(255, 255, 255, 0.2);
     min-width: 320px;
     font-style: normal;
     text-transform: none;
@@ -60,4 +72,8 @@ img {
     .container {
         padding: 0 15px;
     }
+}
+
+body.lock {
+    overflow: hidden;
 }

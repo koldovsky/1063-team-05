@@ -1,84 +1,91 @@
 .best-deals__container {
     padding: 39px 27px;
     background: url(../img/best-deals/freshy-best-deals.png);
-    background-size: cover;
+    background-size: inherit;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .best-deals__container .best-deals__text {
-    text-align: center;
+    display: block;
     color: var(--accent-color-1);
+    text-align: center;
+    font-family: var(--ui-block-name-font-family);
     font-size: var(--ui-block-name-size);
-    font-weight: var(--ui-block-name-font-weight);
+    font-weight: var(--ui-block-title-font-weight);
 }
 
 .best-deals__container .best-deals__title {
     margin: 20px 0 0 0;
+    color: var(--ui-block-best-deals-text-color);
     text-align: center;
-    color: var(--background-color);
     font-size: var(--ui-block-title-size-mobile);
     font-weight: var(--ui-block-title-font-weight);
+    font-family: var(--ui-block-title-font-family);
 }
 
 .best-deals__container .best-deals__description {
+    display: grid;
     margin: 25px 0 0 0;
     text-align: center;
-    color: var(--background-color);
+    color: var(--ui-block-best-deals-text-color);
+    font-size: var(--ui-block-subtitle-size);
+    font-weight: var(--ui-block-subtitle-font-weight);
     font-family: var(--ui-block-subtitle-font-family);
-    font-weight: var(--ui-block-tab-font-weight);
 }
 
 .best-deals__container .best-deals__description .best-deals__discount-description {
-    font-size: var(--ui-block-subtitle-font-family);
-    font-family: var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-discount-font-weight);
+    font-family: var(--ui-block-subtitle-font-family);
 }
 
 .best-deals__container .best-deals__countdown {
-    margin: 20px 0 0 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+.countdown__item {
+    text-align: center;
+    padding: 0;
+    margin: 0;
     position: relative;
 }
 
-.best-deals__container .best-deals__countdown .countdown__item {
-    display: block;
-    text-align: center;
-}
-
-.best-deals__container .best-deals__countdown .countdown__item .countdown__item-decription {
+.countdown__item-decription {
     display: grid;
+    text-align: center;
+    padding: 0;
     margin: auto;
-    color: rgba(255, 255, 255, 0.54);
-    font-size: var(--ui-block-subtitle-size);
-    font-family: var(--ui-block-subtitle-font-family);
-    font-weight: var(--ui-block-subtitle-font-weight);
 }
 
-.best-deals__container .best-deals__countdown .countdown__item .countdown__item-decription::before {
-    content: " ";
-    position: absolute;
+.countdown__item+.countdown__item::before {
+    content: '';
     width: 1px;
-    height: 20%;
-    left: 25%;
-    top: 57%;
-    bottom: 0;
-    border: 1px solid red;
-}
-
-.best-deals__container .best-deals__countdown .countdown__item .countdown__item-decription:not(:last-child)::after {
-    content: ':';
+    background-color: var(--ui-countdown-background-line);
     position: absolute;
-    right: -15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -15px;
 }
 
-.best-deals__container .best-deals__countdown .countdown__item .countdown__item-decription .countdown__item-decription-text {
-    color: var(--background-color);
-    font-size: var(--ui-block-title-size-mobile);
-    font-family: var(--ui-block-title-font-family);
+.countdown__item-decription {
+    color: var(--ui-block-countdown-text-color);
+    font-size: var(--ui-block-name-size);
+    font-weight: var(--ui-block-subtitle-font-weight);
+    font-family: var(--ui-block-subtitle-font-family);
+    line-height: 16px;
+}
+
+.countdown__item-decription .countdown__item-decription-text {
+    color: var(--ui-block-best-deals-text-color);
+    font-size: var(--ui-block-name-size);
     font-weight: var(--ui-block-discount-font-weight);
+    font-family: var(--ui-block-subtitle-font-family);
 }
 
 .best-deals__container .best-deals__discount {
@@ -87,16 +94,103 @@
 }
 
 .best-deals__container .best-deals__discount .discount-text {
-    margin: auto;
-    color: var(--background-color);
+    color: var(--ui-block-best-deals-text-color);
     font-size: var(--ui-block-subtitle-size);
-    font-family: var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-discount-font-weight);
+    font-family: var(--ui-block-subtitle-font-family);
+    margin: auto;
 }
 
 .best-deals__container .best-deals__discount .discount-code {
     color: var(--accent-color-1);
     font-size: var(--ui-block-subtitle-size);
-    font-family: var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-discount-font-weight);
+    font-family: var(--ui-block-subtitle-font-family);
+}
+
+@media (min-width: 375px) {
+    .countdown__item+.countdown__item::before {
+        left: -20px;
+    }
+}
+
+@media (min-width: 425px) {
+    .countdown__item+.countdown__item::before {
+        left: -30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .best-deals__container .best-deals__description {
+        display: block;
+        padding: 0px 70px;
+    }
+
+    .best-deals__container .best-deals__countdown {
+        justify-content: space-around;
+    }
+
+    .countdown__item-decription {
+        font-size: var(--ui-block-footer-title);
+        line-height: 36px;
+    }
+
+    .countdown__item-decription .countdown__item-decription-text {
+        font-size: var(--ui-block-countdown-title);
+    }
+
+    .countdown__item+.countdown__item::before {
+        left: -50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .best-deals__container {
+        padding: 50px 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .best-deals__container .best-deals__description {
+        display: block;
+        padding: 0px 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .best-deals__container {
+        padding: 50px 170px;
+    }
+
+    .countdown__item+.countdown__item::before {
+        left: -75px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .best-deals__container {
+        padding: 50px 195px;
+    }
+
+    .countdown__item+.countdown__item::before {
+        left: -80px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .best-deals__container {
+        padding: 100px 195px;
+    }
+
+    .best-deals__container .best-deals__description {
+        padding: 0px 120px;
+    }
+
+    .best-deals__container .best-deals__countdown {
+        margin: 50px 0 0 0;
+    }
+
+    .countdown__item+.countdown__item::before {
+        left: -80px;
+    }
 }
