@@ -1,3 +1,8 @@
+.fresh_deals {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
 .fresh_deals__header__title {
     color: var(--accent-color-1);
     font: var(--ui-block-name-size) var(--ui-block-name-font-family);

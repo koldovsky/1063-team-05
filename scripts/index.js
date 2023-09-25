@@ -4,4 +4,5 @@ document.addEventListener('partialsLoaded', () => {
     import("./top-picks.js")
     import("./organic.js");
     import("./countdown.js");
+    import("./partners-carousel.js")
 });
