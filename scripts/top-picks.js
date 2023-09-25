@@ -43,7 +43,7 @@ function renderProducts(startIndex) {
     const wrappedProducts = [...products, ...products.slice(0, startIndex)];
 
     let productsHtml = '';
-    for (let i = startIndex; i < startIndex + 4; i++) {
+    for (let i = startIndex; i < startIndex + 5; i++) {
         const product = wrappedProducts[i];
         productsHtml += `
             <li class="top-picks__item">

@@ -95,6 +95,14 @@
     list-style-type: none;
 }
 
+.top-picks__list li:nth-child(n+2) {
+    display: none;
+}
+
+.top-picks__list li:nth-child(){
+    display: block;
+}
+
 .top-picks__card {
     margin: 0;
     padding: 40px 30px;
@@ -160,6 +168,14 @@
         grid-gap: 15px;
     }
 
+    .top-picks__list li:nth-child(n+2) {
+        display: block;
+    }
+
+    .top-picks__list li:nth-child(n+3) {
+        display: none;
+    }
+
     .top-picks__card {
         max-width: 404px;
         max-height: 555px;
@@ -171,6 +187,14 @@
 
     .top-picks__text-wrapper {
         padding: 0 266px;
+    }
+
+    .top-picks__list li:nth-child(n+3) {
+        display: block;
+    }
+
+    .top-picks__list li:nth-child(n+5) {
+        display: none;
     }
 
     .top-picks__list {
