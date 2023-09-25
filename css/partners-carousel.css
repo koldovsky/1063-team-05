@@ -1,11 +1,17 @@
+.partners__carousel-background {
+    background-image: url(../img/partners/partners-background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 .partners__carousel {
     min-height: 243.766px;
-    background-image: url(../img/partners/partners-background.jpeg);
     display: grid;
     grid-template-columns: 40px 1fr 40px;
     align-items: center;
-    background-size: cover;
-    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+   
 }
 
 .partners__carousel-slide {
