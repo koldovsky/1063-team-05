@@ -50,4 +50,5 @@ const nextBtn = document.querySelector('.partners__carousel-btn-next');
 nextBtn.addEventListener('click', nextSlide);
 
 const prevBtn = document.querySelector('.partners__carousel-btn-prev');
-nextBtn.addEventListener('click', prevSlide);
+prevBtn.addEventListener('click', prevSlide);
+
