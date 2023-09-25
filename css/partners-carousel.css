@@ -1,9 +1,11 @@
 .partners__carousel {
     min-height: 243.766px;
-    background-color: var(--accent-color-1);
+    background-image: url(../img/partners/partners-background.jpeg);
     display: grid;
     grid-template-columns: 40px 1fr 40px;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .partners__carousel-slide {
