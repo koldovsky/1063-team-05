@@ -12,6 +12,24 @@ let currentSlideIdx = 0;
 function renderSlide() {
     const slideContainer = document.querySelector('.partners__carousel-slide');
     slideContainer.innerHTML = slides[currentSlideIdx];
+    if (window.matchMedia('(min-width: 628px)').matches) {
+        const secondSlideIdx = currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
+        slideContainer.innerHTML += slides[secondSlideIdx];
+
+        if (window.matchMedia('(min-width: 925px)').matches) {
+            const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
+            slideContainer.innerHTML += slides[thirdSlideIdx];
+            if (window.matchMedia('(min-width: 1024px)').matches) {
+                const fourthSlideIdx = thirdSlideIdx + 1 >= slides.length ? 0 : thirdSlideIdx + 1;
+                slideContainer.innerHTML += slides[fourthSlideIdx];
+                if (window.matchMedia('(min-width: 1224px)').matches) {
+                    const fifthSlideIdx = fourthSlideIdx + 1 >= slides.length ? 0 : fourthSlideIdx + 1;
+                    slideContainer.innerHTML += slides[fifthSlideIdx];
+                }
+            }
+        }
+
+    }
 }
 
 function nextSlide() {
@@ -19,17 +37,17 @@ function nextSlide() {
     renderSlide();
 }
 
-/*function prevSlide() {
+function prevSlide() {
     currentSlideIdx = currentSlideIdx - 1 < 0 ? slides.length - 1 : currentSlideIdx - 1;
     renderSlide();
-}*/
+}
 
-setInterval(nextSlide, 2000);
+//setInterval(nextSlide, 2000);
 
-/*renderSlide();
+renderSlide();
 
 const nextBtn = document.querySelector('.partners__carousel-btn-next');
 nextBtn.addEventListener('click', nextSlide);
 
 const prevBtn = document.querySelector('.partners__carousel-btn-prev');
-nextBtn.addEventListener('click', prevSlide);*/
+nextBtn.addEventListener('click', prevSlide);
