@@ -23,7 +23,7 @@
 .top-picks__title {
     margin: 0;
     margin-top: 20px;
-    color: 42px;
+    color: var(--ui-block-title-color);
     font-size: var(--ui-block-title-size-mobile);
     font-weight: var(--ui-block-title-font-weight);
     font-family: var(--ui-block-title-font-family);
