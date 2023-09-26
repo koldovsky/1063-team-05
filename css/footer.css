@@ -145,7 +145,7 @@ footer {
 .footer__divider-line {
     display: flex;
     margin: auto;
-    width: 90%;
+    width: 95%;
     border: 0.5px solid var(--ui-footer-divider-line);
 }
 
@@ -215,7 +215,7 @@ footer {
     }
 
     .footer__divider-line {
-        width: 90%;
+        width: 94%;
     }
 
     .footer__container-bottom .footer__button {
@@ -248,7 +248,7 @@ footer {
     }
 
     .footer__divider-line {
-        width: 84.6%;
+        width: 93.8%;
     }
 }
 
@@ -310,6 +310,6 @@ footer {
     }
 
     .footer__divider-line {
-        width: 76.8%;
+        width: 69.4%;
     }
 }
