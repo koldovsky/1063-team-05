@@ -1,4 +1,3 @@
-debugger
 let card;
 
 async function prepareCards() {
