@@ -1,7 +1,7 @@
 let card;
 
 async function prepareCards() {
-    const res = await fetch('https://api.npoint.io/770ce53b3b26fbb19eaf', {
+    const res = await fetch('https://api.npoint.io/6e3f87b46aa07989b83f', {
         headers: {
             "Access-Control-Allow-Origin": "api.npoint.io",
         },
@@ -42,7 +42,7 @@ function changeTab(id) {
   <img class="fresh_deals__main__card__img mb-2" src="${data.image}" alt="${data.alt}">
   <div class="fresh_deals__main__card_header">
     <a href="${data.product_page}" class="fresh_deals__card__title">${data.name}</a>
-    <p class="fresh_deals__card__price">${data.price + "USD"}</p>
+    <p class="fresh_deals__card__price">${data.price.toFixed(2) + data.currency}</p>
     <button onclick="window.location.href = '${data.product_page}';" class="fresh_deals__card__button mb-4">Buy Now</button>
   </div>
 </div>
