@@ -43,7 +43,7 @@ function changeTab(id) {
   <div class="fresh_deals__main__card_header">
     <a href="${data.product_page}" class="fresh_deals__card__title">${data.name}</a>
     <p class="fresh_deals__card__price">${data.price.toFixed(2) + data.currency}</p>
-    <button onclick="window.location.href = '${data.product_page}';" class="fresh_deals__card__button mb-4">Buy Now</button>
+    <button onclick="window.location.href = '${data.productPage}'" class="fresh_deals__card__button mb-4">Buy Now</button>
   </div>
 </div>
 `
