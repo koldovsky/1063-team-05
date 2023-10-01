@@ -2,37 +2,77 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100vh;
+    padding-top: 120px;
+    margin: 0;
     background-image: url(../img/section.services/grocery.girl.background.jpg);
     background-size: cover;
+    background-position-x: center;
+    
 }
-
+.services__header{
+    display: block;
+    justify-content: left;
+    text-align: left;
+    padding-right: 15px;
+}
 .services__title {
-    font-family: var(--ui-block-name-font-family);
+    font: var(--ui-block-title-font-family);
     position: relative; 
     display: flex;
     flex-direction: column;
+    justify-content: left;
+    font-weight:var(--ui-block-title-font-weight);
+    max-width: 520px;
+    text-align: left;
 }
+
+    .services__heading {
+        color: var(--accent-color-2);
+        font-size: inherit;
+        font: var(--ui-block-title-font-family);
+    }
 
 .services__description-subtitle {
     font-size: 42px;
 }
 
-    {
-    .services__heading {
-        color: var(--accent-color-2);
-        font-size: 14px;
-    }
+.services__list{   
+    position: relative;
+    display: flexbox;
+    flex-direction: column;
 }
 
+.services__item-description{
+    position: relative;
+    display: flex;
+    flex-direction: grid;    
+}
+
+.services__item{
+    position: relative;
+    display: flex;
+    flex-direction: grid; 
+}
 .services__icon {
     width: 60px;
 }
 
 .services__footer {
+    font: var(--ui-block-subtitle-font-family);
     position: relative;
     display: flex;
     flex-direction: grid;
+    text-align: center;
     background-image: url(../img/section.services/downbackground.jpg);
     padding-top: 60px;
     padding-bottom: 50px;
+}
+
+.services__statistic{
+    position: relative;
+    display: flex;
+    flex-direction: grid;
 }
