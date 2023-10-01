@@ -1,49 +1,49 @@
 const products = [
     {
         id: 1,
-        image: 'img/organic/sugar-snap-peas.png',
+        image: 'img/product/sugar-snap-peas.png',
         name: 'Sugar Snap Peas',
         price: "5,00USD"
     },
     {
         id: 2,
-        image: 'img/organic/cherries.png',
+        image: 'img/product/cherries.png',
         name: 'Cherries',
         price: "12,00USD"
     },
     {
         id: 3,
-        image: 'img/organic/green-cucumbers.png',
+        image: 'img/product/green-cucumbers.png',
         name: 'Green Cucumbers',
         price: "1,50USD"
     },
     {
         id: 4,
-        image: 'img/organic/honeydew-melon.png',
+        image: 'img/product/honeydew-melon.png',
         name: 'Honeydew Melon',
         price: "5,00USD"
     },
     {
         id: 5,
-        image: 'img/organic/raw-almonds.png',
+        image: 'img/product/raw-almonds.png',
         name: 'Raw Almonds',
         price: "9,00USD"
     },
     {
         id: 6,
-        image: 'img/organic/broccoli-crowns.png',
+        image: 'img/product/broccoli-crowns.png',
         name: 'Broccoli Crowns',
         price: "1,50USD"
     },
     {
         id: 7,
-        image: 'img/organic/dried-figs.png',
+        image: 'img/product/dried-figs.png',
         name: 'Dried Figs',
         price: "7,00USD"
     },
     {
         id: 8,
-        image: 'img/organic/green-cabbage.png',
+        image: 'img/product/green-cabbage.png',
         name: 'Green Cabbage',
         price: "1,00USD"
     }
