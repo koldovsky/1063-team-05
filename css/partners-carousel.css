@@ -1,0 +1,45 @@
+.partners__carousel-background {
+    background-image: url(../img/partners/partners-background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.partners__carousel {
+    min-height: 243.766px;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.partners__carousel-slide {
+    min-height: 143.766px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partners__carousel-btn-prev,
+.partners__carousel-btn-next {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    fill: white;
+}
+
+.partners__carousel-btn-prev {
+    transform: scale(-1, 1);
+}
+
+@media (min-width:768px) {
+    .partners__carousel {
+        min-height: 221.195px;
+        max-height: 221.195px;
+    }
+
+    .partner-logos {
+        max-height: 121px;
+        max-width: 187px;
+    }
+}

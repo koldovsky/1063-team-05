@@ -1,4 +1,7 @@
-
+.fresh_deals {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
 
 .fresh_deals__header__title {
     color: var(--accent-color-1);
@@ -6,33 +9,32 @@
     font-weight: var(--ui-block-name-font-weight);
 }
 
-.fresh_deals__header__subtitle{
+.fresh_deals__header__subtitle {
     font: var(--ui-block-title-size) var(--ui-block-title-font-family);
-    font-weight:var(--ui-block-title-font-weight);
+    font-weight: var(--ui-block-title-font-weight);
 }
 
-.fresh_deals__header__info{
+.fresh_deals__header__info {
     color: var(--ui-block-title-color);
     font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-subtitle-font-weight);
 }
 
 .fresh_deals__main__tabs__element.selected:after {
-    display:block;
-    content:"";
-    width:150%;
+    display: block;
+    content: "";
+    width: 150%;
     position: relative;
     background-color: var(--accent-color-1);
     height: 0.15rem;
     z-index: 1;
-
 }
 
-.fresh_deals__main__tabs__element.selected{
+.fresh_deals__main__tabs__element.selected {
     color: var(--ui-block-title-color);
 }
 
-.fresh_deals__main__tabs__element{
+.fresh_deals__main__tabs__element {
     transition: color 300ms;
     cursor: pointer;
     color: var(--ui-block-text-color);
@@ -40,40 +42,45 @@
     font-weight: var(--ui-block-tab-font-weight);
 }
 
-.fresh_deals__main__tabs__element:hover{
+.fresh_deals__main__tabs__element:hover {
     color: var(--ui-block-title-color);
 }
 
-.fresh_deals__main__tabs{
+.fresh_deals__main__tabs {
     width: 90%;
-    overflow-y: visible;
-    overflow-x: auto;
+
 }
 
-.fresh_deals__main__tabs::after{
-    content:"";
-    width:100%;
+.fresh_deals__main__tabs::after {
+    content: "";
+    width: 100%;
     position: relative;
     background-color: var(--ui-block-tab-under_line-color);
     height: 0.1rem;
     z-index: 0;
 }
 
-.fresh_deals__main__tabs__list{
+.fresh_deals__main__tabs__list {
     width: 100%;
     flex-grow: 1;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.fresh_deals__main{
-    width:100%;
+
+.fresh_deals__main {
+    width: 100%;
 }
-.fresh_deals__header{
-    width:90%;
+
+.fresh_deals__header {
+    width: 90%;
 }
-.fresh_deals__main__cards{
+
+.fresh_deals__main__cards {
     display: grid;
     gap: 3rem;
 }
-.fresh_deals__card__button{
+
+.fresh_deals__card__button {
     font: var(--ui-block-name-size) var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-subtitle-font-weight);
     border: 0.15rem var(--accent-color-2) solid;
@@ -81,98 +88,95 @@
     color: var(--accent-color-1);
     border-radius: 0.3rem;
     width: 6rem;
-    height:3rem;
+    height: 3rem;
     transition: background-color 0.3s;
 }
-.fresh_deals__card__button:hover{
+
+.fresh_deals__card__button:hover {
     background-color: var(--accent-color-2);
-    color:white;
+    color: white;
 }
-.fresh_deals__card__price{
+
+.fresh_deals__card__price {
     font: var(--ui-block-text-size) var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-title-font-weight);
-    color:var(--accent-color-2);
+    color: var(--accent-color-2);
     font-size: 1.3rem;
 }
 
-.fresh_deals__main__cards__card{
+
+.fresh_deals__main__cards__card {
     background-color: var(--card-background-color);
     height: fit-content;
     width: 100%;
+    min-height: 400px;
+
 }
 
-.fresh_deals__main__card__img{
+.fresh_deals__main__card__img {
     height: 90%;
     width: 90%;
 }
-.fresh_deals__card__title{
+
+.fresh_deals__card__title {
     font: var(--ui-block-card-font-size) var(--ui-block-subtitle-font-family);
     font-weight: var(--ui-block-tab-font-weight);
+    color:black;
+    text-decoration: none;
 }
 
-.fresh_deals__tab{
-    width:100%;
+.fresh_deals__tab {
+    width: 100%;
 }
 
-#tab_berries{
+.fresh_deals__hidden_tab {
     display: none;
 }
-#tab_nuts{
-    display: none;
-}
-#tab_vegetables{
-    display:none;
-}
 
-
-@media screen and (min-width:768px) {
-    .fresh_deals__main__cards{
+@media screen and (min-width: 768px) {
+    .fresh_deals__main__cards {
         grid-template-columns: 1fr 1fr;
     }
-
 }
-@media screen and (min-width:992px) {
-    .fresh_deals__main__cards{
+
+@media screen and (min-width: 992px) {
+    .fresh_deals__main__cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
     }
-    .fresh_deals__header{
+
+    .fresh_deals__header {
         width: 60%;
     }
-    .fresh_deals__main__tabs{
+
+    .fresh_deals__main__tabs {
         width: 100%;
         overflow-y: visible;
         overflow-x: visible;
     }
-    .fresh_deals__main__tabs__list{
-        justify-content: center !important;
-    }
 
+    .fresh_deals__main__tabs__list {
+        justify-content: center;
+    }
 }
-@media screen and (min-width:1200px) {
-    .fresh_deals__main__cards__card{
+
+@media screen and (min-width: 1200px) {
+    .fresh_deals__main__cards__card {
         background-color: var(--card-background-color);
         height: fit-content;
         width: 16rem;
     }
-    .fresh_deals__main__cards{
+
+    .fresh_deals__main__cards {
         gap: 1.5rem;
     }
-    .fresh_deals__header{
+
+    .fresh_deals__header {
         width: 30rem;
     }
-    .fresh_deals__main{
-        width:fit-content;
+
+    .fresh_deals__main {
+        width: fit-content;
     }
 }
-/*            _                 __     |----                   */
-/*          /  \     |\  /|   /    \   |  __    |   |   ___        */
-/*         /----\    | \/ |   |     |  |    |   |   |  |___       */
-/*        /      \   |    |   \ ___/   |____|   |___|   ___|       */
-/*        ____                                                     */
-/*    __/__    \_                                                  */
-/*   /     \   |  \                                                 */
-/*   \_____/   |  |       ___    |   |   ___                        */
-/*    |        |  |      |___    |   |  |___                        */
-/*    |   _    \_/        ___|   |___|   ___|                       */
-/*    \_/   \_/                                                     */
+

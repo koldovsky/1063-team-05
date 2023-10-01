@@ -1,7 +1,7 @@
 @import url(global.css);
 @import url(header.css);
 @import url(control.css);
-@import url(index.deals-of-the-week.css);
+@import url(top-picks.css);
 @import url(categories.css);
 @import url(about-us.css);
 @import url(footer.css);
@@ -11,4 +11,8 @@
 @import url(section.organic.css);
 @import url(testimonials.css);
 @import url(app.css);
-@import url(index.section.best-deals.partial.css);
+@import url(partners-carousel.css);
+@import url(best-deals.css);
+@import url(delivery.css);
+@import url(contacts-working-hourse.css);
+@import url(footer.css);
