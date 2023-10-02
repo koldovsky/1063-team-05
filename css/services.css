@@ -1,61 +1,65 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
 .services {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: end;
-    height: 100vh;
-    padding-top: 120px;
     margin: 0;
     background-image: url(../img/section.services/grocery.girl.background.jpg);
     background-size: cover;
-    background-position-x: center;
-    
+
 }
-.services__header{
-    display: block;
-    justify-content: left;
-    text-align: left;
+
+.services__header {
+    display: flex;
+    justify-content: right;
     padding-right: 15px;
-}
-.services__title {
     font: var(--ui-block-title-font-family);
-    position: relative; 
+    font-weight: var(--ui-block-title-font-weight);
+}
+
+.services__title {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: left;
-    font-weight:var(--ui-block-title-font-weight);
     max-width: 520px;
     text-align: left;
 }
 
-    .services__heading {
-        color: var(--accent-color-2);
-        font-size: inherit;
-        font: var(--ui-block-title-font-family);
-    }
+.services__heading {
+    color: var(--accent-color-2);
+    font-size: inherit;
+}
 
 .services__description-subtitle {
     font-size: 42px;
 }
 
-.services__list{   
+.services__list {
     position: relative;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
 }
 
-.services__item-description{
+.services__item-description {
     position: relative;
     display: flex;
-    flex-direction: grid;    
+    flex-direction: grid;
 }
 
-.services__item{
+.services__item {
     position: relative;
     display: flex;
-    flex-direction: grid; 
+    flex-direction: grid;
 }
+
 .services__icon {
     width: 60px;
 }
@@ -71,7 +75,7 @@
     padding-bottom: 50px;
 }
 
-.services__statistic{
+.services__statistic {
     position: relative;
     display: flex;
     flex-direction: grid;
