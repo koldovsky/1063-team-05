@@ -120,6 +120,7 @@ footer {
     padding: 12px 20px;
     margin: 12px 0 0 0;
     background-color: var(--background-input-footer);
+    color: var(--ui-block-best-deals-text-color);
     font-size: var(--ui-block-text-size);
     border: none;
     border-radius: 5px;
