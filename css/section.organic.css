@@ -47,6 +47,7 @@
     display: grid;
     grid-template-rows: auto;
     justify-content: center;
+    margin-bottom: 150px;
 }
 
 .element {
@@ -98,6 +99,11 @@
     transition: background-color 0.3s;
 }
 
+.element__info__main__button:hover {
+    background-color: var(--accent-color-2);
+    color: white;
+}
+
 @media screen and (min-width: 768px) {
     .organic__main__container {
         grid-template-columns: 1fr 1fr;
@@ -112,7 +118,8 @@
     }
 
     .element {
-        width: 337px;
+        width: 90%;
+        height: 95%;
     }
 
     .element__info__picture {
