@@ -1,82 +1,174 @@
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 24px;
+.background {
+    background-image: url(../img/section.services/grocery.girl.background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .services {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: end;
-    margin: 0;
-    background-image: url(../img/section.services/grocery.girl.background.jpg);
-    background-size: cover;
+    justify-content: start;
+    padding: 90px 0px;
+}
 
+.services-container{
+    padding: 0px 24px;
 }
 
 .services__header {
     display: flex;
-    justify-content: right;
-    padding-right: 15px;
+    justify-content: left;
+    padding: 0px 15px;
+    margin: 50px 0px 0px;
     font: var(--ui-block-title-font-family);
     font-weight: var(--ui-block-title-font-weight);
 }
 
+
+
 .services__title {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    max-width: 520px;
-    text-align: left;
+    box-sizing: border-box;
+
 }
 
 .services__heading {
     color: var(--accent-color-2);
     font-size: inherit;
+    font-size: 14px;
+    margin: 0px;
 }
 
 .services__description-subtitle {
-    font-size: 42px;
+    color: var(--text-color);
+    font-size: 34px;
+    margin: 20px 0px 0px;
+}
+
+.services__description {
+    font-size: 18px;
+    font: var(--ui-block-name-font-family);
+    font-weight: var(--ui-block-subtitle-font-weight);
+    margin: 25px 0px 0px;
+}
+
+.list{
+    margin: 45px 0px 0px;
 }
 
 .services__list {
-    position: relative;
     display: flex;
     flex-direction: column;
+    margin: 0px -15px;
+    padding: 0;
 }
 
-.services__item-description {
-    position: relative;
-    display: flex;
-    flex-direction: grid;
+.delivery-support{
+    margin: 50px 0px 0px;
+    padding: 0px 15px;
 }
 
 .services__item {
+    font: var(--ui-block-name-font-family);
+    font-size: 22px;
     position: relative;
     display: flex;
     flex-direction: grid;
+    text-align: left;
+    margin: 0px -7.5px;
+}
+
+.services__item-content{
+    padding: 7.5px 0px;
+}
+
+.services__item-description {
+    font: var(--ui-block-subtitle-font-family);
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: grid;
+}
+
+.discount-app{
+    margin: 50px 0px 0px;
+    padding: 0px 15px;
 }
 
 .services__icon {
-    width: 60px;
+    width: 50px;
+    margin: 7.5px;
+}
+
+.list__container{
+    margin: 7.5px;
 }
 
 .services__footer {
-    font: var(--ui-block-subtitle-font-family);
+    font: var(--ui-block-name-font-family);
+    font-weight: var(--ui-block-name-font-weight);
+    color: var(--background-color);
+    background-image: url(../img/section.services/downbackground.jpg);
+    background-size: cover;
+    padding: 50px 0px 60px;
+}
+
+.services__footer-global {
     position: relative;
     display: flex;
-    flex-direction: grid;
+    flex-direction: column;
     text-align: center;
-    background-image: url(../img/section.services/downbackground.jpg);
-    padding-top: 60px;
-    padding-bottom: 50px;
+    margin: 0px -15px;
 }
 
 .services__statistic {
-    position: relative;
-    display: flex;
-    flex-direction: grid;
+    padding: 0px 15px;
+    margin: auto;
+    font-size: 34px;
 }
+
+.services__statistic-description {
+    padding: 0px 15px;
+    margin: 25px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.statistic-and-discrpition {
+    margin: 50px 0px 0px;
+}
+
+@media (min-width: 768px) {
+    .services__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .services__item-description {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .services__footer-global {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 32px;
+    }
+
+    .statistic-and-discrpition {
+        padding: 0px 15px 0px 15px;
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .services__footer-global {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
