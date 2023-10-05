@@ -1,41 +1,6 @@
 /* Kravchuk Dmytro */
-const products = [
-    {
-        id: 1,
-        name: 'Granny Smith Apples',
-        imageUrl: 'img/product/granny-smith.png',
-        price: '2,00',
-        currency: 'USD'
-    },
-    {
-        id: 2,
-        name: 'Strawberries',
-        imageUrl: 'img/product/strawberries.png',
-        price: '8,00',
-        currency: 'USD'
-    },
-    {
-        id: 3,
-        name: 'Blackberries',
-        imageUrl: 'img/product/blackberries.png',
-        price: '4,00',
-        currency: 'USD'
-    },
-    {
-        id: 4,
-        name: 'Mango',
-        imageUrl: 'img/product/mango.png',
-        price: '2,50',
-        currency: 'USD'
-    },
-    {
-        id: 5,
-        name: 'Organic Lemons',
-        imageUrl: 'img/product/organic-lemons.png',
-        price: '1,33',
-        currency: 'USD'
-    }
-];
+const response = await fetch('api/products.json');
+const products = await response.json();
 
 let currentIndex = 0;
 
@@ -49,11 +14,11 @@ function renderProducts(startIndex) {
         productsHtml += `
             <li class="top-picks__item">
                 <article class="top-picks__card">
-                    <img class="top-picks__card-img" src="${product.imageUrl}" alt="${product.name}">
-                    <a class="top-picks__card-link" href="#">${product.name}</a>
-                    <p class="top-picks__card-price">${product.price}<span class="top-picks__product-currency">${product.currency}</span></p>
+                    <img class="top-picks__card-img" src="img/product/${product.image}" alt="${product.title}">
+                    <a class="top-picks__card-link" href="#">${product.title}</a>
+                    <p class="top-picks__card-price">${product.price.toFixed(2)}<span class="top-picks__product-currency">${product.currency}</span></p>
                     <div class="top-picks__card-button-button-wrapper">
-                        <button class="top-picks__card-button">Buy Now</button>
+                        <button type="button" class="top-picks__card-button btn-buy" data-id=${product.id}>Buy Now</button>
                     </div>
                 </article>
             </li>`;

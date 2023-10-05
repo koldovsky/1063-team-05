@@ -15,7 +15,6 @@ function renderSlide() {
     if (window.matchMedia('(min-width: 628px)').matches) {
         const secondSlideIdx = currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
         slideContainer.innerHTML += slides[secondSlideIdx];
-
         if (window.matchMedia('(min-width: 925px)').matches) {
             const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
             slideContainer.innerHTML += slides[thirdSlideIdx];
@@ -52,3 +51,4 @@ nextBtn.addEventListener('click', nextSlide);
 const prevBtn = document.querySelector('.partners__carousel-btn-prev');
 prevBtn.addEventListener('click', prevSlide);
 
+window.addEventListener('resize', renderSlide);

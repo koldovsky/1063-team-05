@@ -1,0 +1,37 @@
+[
+    {
+       "id":1,
+       "title":"Granny Smith Apples",
+       "image":"granny-smith.png",
+       "price":4.00,
+       "currency":"USD"
+    },
+    {
+       "id":2,
+       "title":"Strawberries",
+       "image":"strawberries.png",
+       "price":8.00,
+       "currency":"USD"
+    },
+    {
+       "id":3,
+       "title":"Blackberries",
+       "image":"blackberries.png",
+       "price":4.00,
+       "currency":"USD"
+    },
+    {
+       "id":4,
+       "title":"Mango",
+       "image":"mango.png",
+       "price":2.50,
+       "currency":"USD"
+    },
+    {
+       "id":5,
+       "title":"Organic Lemons",
+       "image":"organic-lemons.png",
+       "price":1.33,
+       "currency":"USD"
+    }
+ ]
