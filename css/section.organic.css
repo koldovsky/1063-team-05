@@ -1,3 +1,11 @@
+.organic__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
 .organic__header__title {
     display: flex;
     text-align: center;
@@ -26,7 +34,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 15px;
     padding: 15px;
     font-family: var(--ui-block-name-font-family);
     font-weight: normal;
@@ -35,10 +43,11 @@
     font-size: 1.1rem;
 }
 
-.organic__main {
+.organic__main__container {
     display: grid;
     grid-template-rows: auto;
     justify-content: center;
+    margin-bottom: 150px;
 }
 
 .element {
@@ -88,4 +97,80 @@
     width: 5.7rem;
     height:2.6rem;
     transition: background-color 0.3s;
+}
+
+.element__info__main__button:hover {
+    background-color: var(--accent-color-2);
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .organic__main__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .organic__header__info {
+        width: 450px;
+    }
+
+    .element {
+        justify-self: center;
+    }
+
+    .element {
+        width: 90%;
+        height: 95%;
+    }
+
+    .element__info__picture {
+        width: 281px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .organic__header__subtitle {
+        font-size: 2.7rem;
+    }
+
+    .organic__header__info {
+        width: 578px;
+    }
+
+    .organic__main__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .element {
+        width: 205px;
+    }
+
+    .element__info__picture {
+        width: 9rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .organic__header__info {
+        width: 718px;
+        height: 70px;
+    }
+    
+    .organic__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .organic__main__container {
+        width: 1200px;
+    }
+
+    .element {
+        width: 257px;
+    }
+
+    .element__info__picture {
+        width: 197px;
+    }
 }

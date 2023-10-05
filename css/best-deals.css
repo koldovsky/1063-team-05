@@ -1,3 +1,7 @@
+.best-deals {
+    padding: 60px 0px 90px 0px;
+}
+
 .best-deals__container {
     padding: 39px 27px;
     background: url(../img/best-deals/freshy-best-deals.png);
@@ -109,18 +113,28 @@
 }
 
 @media (min-width: 375px) {
+    .best-deals {
+        padding: 60px 0px 90px 0px;
+    }
     .countdown__item+.countdown__item::before {
         left: -20px;
     }
 }
 
 @media (min-width: 425px) {
+    .best-deals {
+        padding: 60px 0px 90px 0px;
+    }
     .countdown__item+.countdown__item::before {
         left: -30px;
     }
 }
 
 @media (min-width: 768px) {
+    .best-deals {
+        padding: 60px 0px 95px 0px;
+    }
+
     .best-deals__container .best-deals__description {
         display: block;
         padding: 0px 70px;
@@ -145,6 +159,10 @@
 }
 
 @media (min-width: 1024px) {
+    .best-deals {
+        padding: 60px 0px 100px 0px;
+    }
+
     .best-deals__container {
         padding: 50px 150px;
         background-size: cover;

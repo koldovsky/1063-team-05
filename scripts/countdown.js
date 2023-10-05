@@ -1,6 +1,6 @@
 // Vitalii Lozovan -> countdown
 // set the counter end date 
-const endDate = new Date("2023-10-01T23:59:59").getTime();
+const endDate = new Date("2023-11-01T23:59:59").getTime();
 
 // counter update every second
 const timer = setInterval(function () {
