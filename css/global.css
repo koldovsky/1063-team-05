@@ -99,3 +99,7 @@ body.cart-popup-active::after {
     z-index: 980;
     display: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
