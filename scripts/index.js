@@ -5,5 +5,6 @@ document.addEventListener('partialsLoaded', () => {
     import("./organic.js");      
     import("./countdown.js");
     import("./partners-carousel.js");
-    import("./scroll.js")
+    import("./scroll.js");
+    import("./services.js");
 });

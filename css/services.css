@@ -1,12 +1,14 @@
-.background {
-    background-image: url(../img/section.services/grocery.girl.background.jpg);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
+.services__content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
     display: flex;
+    justify-content: end;
 }
 
-.services {
+
+.services__container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,6 +21,7 @@
     align-items: center;
     text-align: left;
     padding: 90px 24px;
+    max-width: 1200px;
 }
 
 .services__header {
@@ -146,23 +149,27 @@
 
 
 @media (min-width: 768px) {
-    .background {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-    }
-
-    .services {
+    .services__container {
         float: right;
         width: 50%;
         box-sizing: border-box;
         display: flex;
+        flex-direction: row;
+        justify-content: end;
         align-items: left;
         text-align: left;
     }
 
-    .services__title{
+    .services__title {
         max-width: 570px;
+    }
+
+    .second-half {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
     }
 
 }
@@ -183,15 +190,17 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .services__item-content{
+    .services__item-content {
         max-width: 270px;
     }
 
-    .delivery-support, .discount-app{
+    .delivery-support,
+    .discount-app {
         max-width: 285px;
     }
 
-    .list-container, .services__item-description{
+    .list-container,
+    .services__item-description {
         text-align: left;
     }
 }
