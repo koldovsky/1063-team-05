@@ -1,3 +1,4 @@
+/* Kravchuk Dmytro */
 const products = [
     {
         id: 1,

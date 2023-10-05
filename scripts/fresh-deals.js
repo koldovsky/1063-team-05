@@ -39,11 +39,11 @@ function changeTab(id) {
     card[tab_id].forEach(data => {
         element.innerHTML += `
 <div class="fresh_deals__main__cards__card p-2 d-flex flex-column align-items-center">
-  <img class="fresh_deals__main__card__img mb-2" src="${data.image}" alt="${data.alt}">
+  <img role="img" class="fresh_deals__main__card__img mb-2" src="${data.image}" alt="${data.alt}">
   <div class="fresh_deals__main__card_header">
-    <a href="${data.productPage}" class="fresh_deals__card__title">${data.name}</a>
+    <a role="link" href="${data.productPage}" class="fresh_deals__card__title">${data.name}</a>
     <p class="fresh_deals__card__price">${data.price.toFixed(2) + data.currency}</p>
-    <button onclick="window.location.href = '${data.productPage}'" class="fresh_deals__card__button mb-4">Buy Now</button>
+    <button role="button" aria-label="Buy now ${data.name} button " onclick="window.location.href = '${data.productPage}'" class="fresh_deals__card__button mb-4">Buy Now</button>
   </div>
 </div>
 `
