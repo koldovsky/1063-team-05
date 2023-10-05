@@ -52,3 +52,4 @@ nextBtn.addEventListener('click', nextSlide);
 const prevBtn = document.querySelector('.partners__carousel-btn-prev');
 prevBtn.addEventListener('click', prevSlide);
 
+window.add
